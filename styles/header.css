@@ -95,3 +95,11 @@ header {
         height: 60px;
     }
 }
+
+@media screen and (min-height: 900px) {
+    #logo {
+        width: 20%;
+        height: 20%;
+        left: 45%;
+    }
+}
