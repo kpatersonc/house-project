@@ -6,13 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-
         .navbar {
-            margin-bottom: 0;
+            margin-bottom: -30px;
             border-radius: 0;
             font-size: 12px;
             background: black;
@@ -22,13 +21,9 @@
             background: black;
         }
 
-        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-
         .row.content {
             height: 450px
         }
-
-        /* Set black background color, white text and some padding */
 
         footer {
             background-color: black;
@@ -37,14 +32,56 @@
             padding: 15px;
         }
 
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 20%;
+        .award-container {
+            display: inline-block;
+            white-space: nowrap;
+            background: rgba(255, 217, 5, 0.774);
+            font-style: black;
+            font-weight: bold;
+            width: 100%;
         }
 
-        /* On small screens, set height to 'auto' for sidenav and grid */
+        .award-container img {
+            margin-left: 3%;
+            width: 150px;
+            height: 75px;
+        }
+
+        #num-1-remax {
+            float: right;
+            margin: 0;
+            width: 75px;
+            height: 75px;
+        }
+
+        #logo {
+            width: 20%;
+            height: 20%;
+            position: relative;
+            left: 40%;
+        }
+
+        .fa {
+            font-size: 13px;
+            text-align: center;
+            text-decoration: none;
+            float: right;
+            background: white;
+            color: black;
+            padding: 5px;
+            margin: 30px 3px 0 3px;
+            border-radius: 3px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            color: #fff;
+
+            text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+        }
 
         @media screen and (max-width: 767px) {
             .sidenav {
@@ -53,6 +90,25 @@
             }
             .row.content {
                 height: auto;
+            }
+
+            .award-container {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1150px) {
+            .award-container img {
+                width: 125px;
+                height: 60px;
+                margin-left: 2%;
+            }
+
+            #num-1-remax {
+                float: right;
+                margin: 0;
+                width: 75px;
+                height: 60px;
             }
         }
     </style>
@@ -82,13 +138,29 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <a href="#">
-                                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                                    <span class="glyphicon glyphicon-log-in"></span> Member Login</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <img src="../images/TeamOfAcesLogo.png" class="center" />
+            <div class="share-buttons">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-facebook"></a>
+            </div>
+            <img src="../images/TeamOfAcesLogo.png" class="center" id="logo" />
+            <div class="award-container">
+                <span style="padding: 1em;">Our Awards</span>
+                <img src="../images/HallOfFameAward.png" />
+                <img src="../images/ExecutiveClubAward.png" />
+                <img src="../images/100ClubAward.png" />
+                <img src="../images/ChairmanClubAward.png" />
+                <img src="../images/DiamondClubAward.png" />
+                <img src="../images/Number1Remax.png" id="num-1-remax" />
+            </div>
         </div>
         <div class=""></div>
     </header>
