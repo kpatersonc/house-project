@@ -13,8 +13,9 @@ header {
     white-space: nowrap;
     background: #f0df98ff;
     color: black;
-    font-weight: bold;
+
     width: 100%;
+    text-align: center;
 }
 
 .award-container img {
@@ -28,6 +29,13 @@ header {
     margin: 0;
     width: 75px;
     height: 60px;
+}
+
+#our-awards {
+    padding: 1em;
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 #logo {
