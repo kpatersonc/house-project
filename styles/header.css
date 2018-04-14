@@ -1,5 +1,5 @@
 .navbar {
-    margin-bottom: -30px;
+    margin-bottom: -50px;
     border-radius: 0;
     font-size: 12px;
     background: black;
@@ -12,7 +12,7 @@ header {
     display: inline-block;
     white-space: nowrap;
     background: #f0df98ff;
-    font-style: black;
+    color: black;
     font-weight: bold;
     width: 100%;
 }
@@ -20,14 +20,14 @@ header {
 .award-container img {
     margin-left: 3%;
     width: 150px;
-    height: 75px;
+    height: 60px;
 }
 
 #num-1-remax {
     float: right;
     margin: 0;
     width: 75px;
-    height: 75px;
+    height: 60px;
 }
 
 #logo {
@@ -45,7 +45,7 @@ header {
     background: white;
     color: black;
     padding: 5px;
-    margin: 30px 3px 0 3px;
+    margin: 50px 3px 0 3px;
     border-radius: 3px;
 }
 

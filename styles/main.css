@@ -1,3 +1,16 @@
 .row.content {
-    height: 450px
+    height: 450px;
+    padding: 15px 0px;
+}
+
+h2 {
+    margin: 0;
+    font-style: normal;
+}
+
+.text-container {
+    background: black;
+    padding: 20px;
+    font-style: italic;
+    margin-bottom: 5%;
 }
