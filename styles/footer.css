@@ -1,5 +1,8 @@
 footer {
-    background-color: black;
-    color:#f0df98ff;
+    background-color: #f0df98ff;;
+    color: black;
     padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
 }
