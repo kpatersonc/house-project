@@ -79,6 +79,11 @@ header {
     .award-container {
         display: none;
     }
+
+    #logo {
+        width: 50%;
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 1150px) {

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>House-Project</title>
+    <title>Team Of Aces</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
         .row.content {
             padding: 0;
-            background: black;            
+            background: black;
         }
 
         .profile {
@@ -35,13 +35,28 @@
         .profile-container {
             display: inline-flex;
         }
-        
+
         .card-info {
             width: unset;
         }
 
         .card-horizontal {
             margin-right: 30%;
+        }
+
+        @media screen and (max-width: 767px) {
+            .profile-container {
+                display: unset!important;
+            }
+            .card-horizontal {
+                margin-right: 0!important;
+            }
+            .image-container {
+                display: none;
+            }
+            .profile {
+                height: 30vh;
+            }
         }
     </style>
 </head>
@@ -105,7 +120,7 @@
                 <div class="card card-horizontal">
                     <div class="row">
                         <div class="col-md-8 card-info">
-                            <img src="./images/RaheelChaudhry.png" class="w-50 profile"/>
+                            <img src="./images/RaheelChaudhry.png" class="w-50 profile" />
                         </div>
                         <div class="col-md-8 card-info">
                             <div class="card-block">
@@ -117,27 +132,28 @@
                     </div>
                 </div>
                 <div class="card">
-                        <div class="row">
-                            <div class="col-md-8 card-info">
-                                <img src="./images/KafeelChaudhry.png" class="w-50 profile"/>
-                            </div>
-                            <div class="col-md-8 card-info">
-                                <div class="card-block">
-                                    <h3 class="card-title">Kafeel Chaudhry</h3>
-                                    <h4 class="card-text">Direct : 1-416-786-4300</h4>
-                                    <a href="mailto:kafeel@teamofaces.com">kafeel@teamofaces.com</a>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-8 card-info">
+                            <img src="./images/KafeelChaudhry.png" class="w-50 profile" />
+                        </div>
+                        <div class="col-md-8 card-info">
+                            <div class="card-block">
+                                <h3 class="card-title">Kafeel Chaudhry</h3>
+                                <h4 class="card-text">Direct : 1-416-786-4300</h4>
+                                <a href="mailto:kafeel@teamofaces.com">kafeel@teamofaces.com</a>
                             </div>
                         </div>
                     </div>
-            </div> 
+                </div>
+            </div>
 
         </div>
     </div>
 
     <footer class="container-fluid text-center">
-        <p>We are experts in all aspects of real estate, from residential to commercial and the development of custom projects. 
-            Leverage our success in this industry and our well established network to work for you in realizing your investment ambitions!   </p>
+        <p>We are experts in all aspects of real estate, from residential to commercial and the development of custom projects.
+            Leverage our success in this industry and our well established network to work for you in realizing your investment
+            ambitions! </p>
     </footer>
 
 </body>

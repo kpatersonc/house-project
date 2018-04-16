@@ -16,12 +16,6 @@ h2 {
 }
 
 
-@media screen and (min-height: 800px)  {
-    .text-container {
-        font-size: 24px;
-    }
-}
-
 .flex-container {
     display: flex;
     background-color: black;
@@ -32,4 +26,20 @@ h2 {
 .flex-container > div {
     font-size: 28px;
     margin-top: 10px
+}
+
+
+@media screen and (min-height: 800px)  {
+    .text-container {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 767px)  {
+    .profile-container {
+        display: unset!important;
+    }
+    .card-horizontal {
+        margin-right: 0!important;
+    }
 }
