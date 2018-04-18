@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Team Of Aces</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/header.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./styles/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .image-container {
+            width: 100%;
+            height: 30%;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .row.content {
+            padding: 0;
+            background: black;
+        }
+
+        .profile {
+            height: 15vh;
+        }
+
+        .profile-container {
+            display: inline-flex;
+        }
+
+        .card-info {
+            width: unset;
+        }
+
+        .card-horizontal {
+            margin-right: 30%;
+        }
+
+        @media screen and (max-width: 767px) {
+            .profile-container {
+                display: unset!important;
+            }
+            .card-horizontal {
+                margin-right: 0!important;
+            }
+            .image-container {
+                display: none;
+            }
+            .profile {
+                height: 30vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#">Investor Portal</a>
+                            </li>
+                            <!-- <li class="active"><a href="#">Home</a></li>        
+                                <li><a href="#">Projects</a></li>  If we need to add nav in the future its here
+                                <li><a href="#">Contact</a></li> -->
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-log-in"></span> Member Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="share-buttons">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-facebook"></a>
+            </div>
+            <img src="./images/TeamOfAcesLogo.png" class="center" id="logo" />
+            <div class="award-container">
+                <span id="our-awards">Our Awards</span>
+                <img src="./images/HallOfFameAward.png" />
+                <img src="./images/ExecutiveClubAward.png" />
+                <img src="./images/100ClubAward.png" />
+                <img src="./images/ChairmanClubAward.png" />
+                <img src="./images/DiamondClubAward.png" />
+                <img src="./images/Number1Remax.png" id="num-1-remax" />
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="image-container">
+                <img src="./images/bg-house.png" />
+            </div>
+            <div class="container py-3 profile-container">
+                <div class="card card-horizontal">
+                    <div class="row">
+                        <div class="col-md-8 card-info">
+                            <img src="./images/RaheelChaudhry.png" class="w-50 profile" />
+                        </div>
+                        <div class="col-md-8 card-info">
+                            <div class="card-block">
+                                <h3 class="card-title">Raheel Chaudhry</h3>
+                                <h4 class="card-text">Direct : 1-416-786-1717</h4>
+                                <a href="mailto:raheel@teamofaces.com">raheel@teamofaces.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-8 card-info">
+                            <img src="./images/KafeelChaudhry.png" class="w-50 profile" />
+                        </div>
+                        <div class="col-md-8 card-info">
+                            <div class="card-block">
+                                <h3 class="card-title">Kafeel Chaudhry</h3>
+                                <h4 class="card-text">Direct : 1-416-786-4300</h4>
+                                <a href="mailto:kafeel@teamofaces.com">kafeel@teamofaces.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>We are experts in all aspects of real estate, from residential to commercial and the development of custom projects.
+            Leverage our success in this industry and our well established network to work for you in realizing your investment
+            ambitions! </p>
+    </footer>
+
+</body>
+
+</html>
