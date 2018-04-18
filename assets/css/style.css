@@ -755,11 +755,11 @@ textarea::-ms-input-placeholder
 /* Contact Section */
 
 .contact{
-    background: #3b404c;
+    background: black;
     padding: 80px 0;
 }
 .contact h1,h5{
-    color: #ffffff;
+    color: #f0df98ff;
 }
 
 .contact-top{
@@ -770,13 +770,13 @@ textarea::-ms-input-placeholder
     font-family: 'lorabold';
 }
 .contact-top li a{
-    color: #ffffff;
+    color: #f0df98ff;
     text-transform: uppercase;
     font-family: 'open_sanssemibold';
     transition: .3s ease-in-out;
 }
 .contact-top li a:hover{
-    color: #00a5ff;
+    color: #f0df98ff;
 }
 .contact-left-info{
     margin-bottom: 50px;
@@ -788,7 +788,7 @@ textarea::-ms-input-placeholder
 }
 .contact-form .form-group label{
     font-size: 22px;
-    color: #ffffff;
+    color: #f0df98ff;
     margin-bottom: 10px;
 }
 .contact-form button{

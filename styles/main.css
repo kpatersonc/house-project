@@ -8,6 +8,10 @@ h2 {
     font-style: normal;
 }
 
+h1 {
+   color: #f0df98ff!important;
+}
+
 .text-container {
     background: black;
     padding: 20px;
