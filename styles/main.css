@@ -15,6 +15,49 @@ h2 {
     margin-bottom: 5%;
 }
 
+.page{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0;
+}
+
+#buying{
+    background-image: url("../images/bg-buying.png");
+}
+
+#selling{
+    background-image: url("../images/bg-selling.png");
+}
+
+#investors{
+    background-image: url("../images/bg-selling.png");
+}
+
+#why-us{
+    background-image: url("../images/bg-why-us.png")
+}
+
+#testimonial{
+    background-color: black;
+}
+#investor-portal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}
+
+#investor-portal-container{
+    height: 150px;
+    position: relative;
+}
+
+#selling-service{
+    font-size: 20px;
+}
 
 .flex-container {
     display: flex;
@@ -41,5 +84,12 @@ h2 {
     }
     .card-horizontal {
         margin-right: 0!important;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #buying-location{
+        font-size: 20px;
+        width: 20%;      
     }
 }
