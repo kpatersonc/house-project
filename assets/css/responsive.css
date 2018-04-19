@@ -184,6 +184,11 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         margin: 0 auto;
     }
 
+    .row {
+        margin: 0;
+        text-align: center;
+    }
+
 }
 
 
