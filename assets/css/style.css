@@ -806,20 +806,19 @@ textarea::-ms-input-placeholder
 }
 
 /* Home view */
-.profile {      
+.profile-award {      
     position: relative;
+    top: 75vh;
+    max-height: 30vh;
 }
 
-.raheel {
-    top: 75vh;
+.right {    
     float: right;
-    max-height: 30vh;
+    
 }
 
-.kafeel {
-    top: 75vh;
+.left {
     float: left;
-    max-height: 30vh;
 }
 /*Scroll Up*/
 
