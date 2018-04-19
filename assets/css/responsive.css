@@ -141,6 +141,9 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
     .contact-left-info {
         text-align: center;
     }
+    .contact-form {
+        padding: 0;
+    }
     .copyright{
         margin-bottom: 25px;
     }
@@ -184,7 +187,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         margin: 0 auto;
     }
 
-    .row {
+    .contact-row {
         margin: 0;
         text-align: center;
     }
@@ -214,6 +217,9 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
     }
     .contact-left-info {
         text-align: center;
+    }
+    .contact-form {
+        padding: 0;
     }
     .copyright{
         margin-bottom: 25px;
