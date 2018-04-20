@@ -9,7 +9,7 @@ h2 {
 }
 
 h1 {
-   color: #f0df98ff!important;
+    color: #f0df98ff!important;
 }
 
 .text-container {
@@ -23,8 +23,27 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
     padding: 0;
+}
+@media screen and (min-height: 720px) and (min-width:720px){
+    .page{
+        height: 100vh;
+    }
+}
+
+.section-divider{
+    background-image: url("../images/gold-page-divider.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    background-color:black;
+    text-align: center;
+    height: 100px;
+}
+
+#information{
+    background-color: black;
+    height: 20vh;
 }
 
 #buying{
