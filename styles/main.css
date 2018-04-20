@@ -12,11 +12,25 @@ h1 {
     color: #f0df98ff!important;
 }
 
+h1 span{
+    background-image:url(../images/elegant_border.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#f0df98ff;
+    padding: 7%;
+}
+
+
 .text-container {
     background: black;
     padding: 20px;
     font-style: italic;
     margin-bottom: 5%;
+}
+
+.info-title{
+    color: black !important;
 }
 
 .page{
@@ -39,6 +53,11 @@ h1 {
     background-color:black;
     text-align: center;
     height: 100px;
+}
+@media screen and (max-height: 760px) , screen and (max-width: 420px){
+    .section-divider{
+        height: 50px;
+    }
 }
 
 #information{

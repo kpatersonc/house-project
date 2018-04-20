@@ -64,19 +64,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#home">Home</a>
+                        <a onclick="window.location.href='index.html#home'">Home</a>
                     </li>
                     <li>
-                        <a href="#service">Services</a>
+                        <a onclick="window.location.href='index.html#information'">Information</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a onclick="window.location.href='index.html#testimonials'">Testimonials</a>
                     </li>
                     <li>
-                        <a href="#testimonial">Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
+                        <a onclick="window.location.href='index.html#contact'">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -84,7 +81,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
+    <a name="home"></a>
     <!--Home page style-->
     <header id="home" class="home">
         <div class="overlay">
@@ -107,11 +104,13 @@
         </div>
     </header>
     <div class="section-divider"></div>
+    <a id="information" name="information"></a>
     <section id="buying" class="portfolio lightbg sections page">
         <div class="container">
             <div class="heading text-center">
-                <h1>Buying</h1>
-                <div class="separator"></div>
+                <div>
+                    <h1 class="info-title"><span>Buying</span></h1>
+                </div>
             </div>
             <div class="container-fluid text-center">
                 <div class="row content">
@@ -147,14 +146,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>   
     <!-- End of buying Section -->
     <div class="section-divider"></div>
     <section id="selling" class="portfolio lightbg sections page">
         <div class="container">
             <div class="heading text-center">
-                <h1>Selling</h1>
-                <div class="separator"></div>
+                <h1 class="info-title"><span>Selling</span></h1>
             </div>
             <div class="container-fluid text-center">
                 <div class="row content">
@@ -186,8 +184,7 @@
     <section id="investors" class="portfolio lightbg sections page">
         <div class="container">
             <div class="heading text-center">
-                <h1>Investors</h1>
-                <div class="separator"></div>
+                <h1 class="info-title"><span>Investors</span></h1>
             </div>
             <div class="container-fluid text-center">
                 <div class="row content">
@@ -215,8 +212,7 @@
     <section id="why-us" class="portfolio lightbg sections page">
         <div class="container">
             <div class="heading text-center">
-                <h1>Why Us?</h1>
-                <div class="separator"></div>
+                <h1 class="info-title"><span>Why Us?</span></h1>
             </div>
             <div class="container-fluid text-center">
                 <div class="row content">
@@ -232,12 +228,12 @@
         </div>
     </section>
     <!-- End of why-us-one Section -->
+    <a name="testimonials"></a>
     <div class="section-divider"></div>
     <section id="testimonial" class="portfolio lightbg sections page">
         <div class="container">
             <div class="heading text-center">
-                <h1>Testimonials</h1>
-                <div class="separator"></div>
+                <h1 class="info-title"><span>Testimonials</span></h1>
             </div>
             <div class="container-fluid text-center">
                 <div class="row content">
@@ -271,7 +267,8 @@
         </div>
     </section>
     <!-- End of investor-one Section -->
-    <div name="portfolio" class="section-divider"></div>
+    <div id="contact"></div>
+    <div class="section-divider"></div>
     <!-- Sections -->
     <section id="contact" class="contact">
         <div class="container contact-container">
