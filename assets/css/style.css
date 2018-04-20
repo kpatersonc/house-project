@@ -469,7 +469,7 @@ textarea::-ms-input-placeholder
     padding: 15px 0;
 }
 .navbar-default .navbar-nav>li>a {
-    color: #ffffff;
+    color: #f0df98ff;
     text-transform: uppercase;
     font-family: 'open_sanssemibold';
 }
