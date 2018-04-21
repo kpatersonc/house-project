@@ -849,15 +849,13 @@ textarea::-ms-input-placeholder
 
 .home-text {
     position: absolute;
-    bottom: 50%;
+    bottom: 55%;
     background:  rgba(5, 5, 5, 0.747);
     border-radius: 5px;
     color: #f0df98ff;
     text-align: center;
     font-size: 24px;
-    font-weight: bold;
     padding: 10px;
-    margin: 1px;
 }
 /*Scroll Up*/
 
