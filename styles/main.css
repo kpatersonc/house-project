@@ -39,6 +39,24 @@ h1 span{
     background-position: center;
     padding: 0;
 }
+
+.send-button {
+    color: #f0df98ff;
+    background-color: black;
+    border-color: transparent;
+}
+
+.send-button:hover {
+    color: #f0df98ff;
+    background-color: black;
+    border-color: #f0df98ff;
+}
+.send-button:active {
+    color: #f0df98ff;
+    background-color: black;
+    border-color: #f0df98ff;
+}
+
 @media screen and (min-height: 720px) and (min-width:720px){
     .page{
         height: 100vh;

@@ -35,6 +35,12 @@
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
 
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_TKT5u4bEjFqmU9gzjoOxy");
+        })();
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#main_navbar">
@@ -73,7 +79,7 @@
                         <a onclick="window.location.href='index.html#testimonials'">Testimonials</a>
                     </li>
                     <li>
-                        <a onclick="window.location.href='index.html#contact'">Contact</a>
+                        <a onclick="window.location.href='index.html#contact'">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -90,13 +96,13 @@
                     <div class="home-wrapper">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="home-text">
-                                We are experts in all aspects of real estate, from residential to commercial and the development
-                                    of custom projects. Leverage our success in this industry and our well established network
-                                    to work for you in realizing your investment ambitions!
+                                We are experts in all aspects of real estate, from residential to commercial and the development of custom projects. Leverage
+                                our success in this industry and our well established network to work for you in realizing
+                                your investment ambitions!
                             </div>
                             <div class="image-container">
                                 <div class="col-md-3 col-sm-3 col-xs-4 profile-card left">
-                                    <img src="./images/Kafeel-Profile-Current.jpg" class="w-50" style="margin: 5px 0px" />
+                                    <img src="./images/Kafeel-Profile-Current.jpg" class="w-50" style="margin-bottom: 5px" />
                                     <p>Kafeel Chaudhry</p>
                                     <p>M: 1-416-786-4300</p>
                                     <a href="mailto:kafeel@teamofaces.com" style="margin: 0;">kafeel@teamofaces.com</a>
@@ -107,7 +113,7 @@
                                     <img src="./images/Kafeel-VegasAward4.jpg" class="w-50 col-md-4 col-sm-4 col-xs-4" />
                                 </div>
                                 <div class="col-md-3 col-sm-3 col-xs-4 profile-card right">
-                                    <img src="./images/Raheel-Profile-Current.jpg" class="w-50" style="margin: 5px 0px" />
+                                    <img src="./images/Raheel-Profile-Current.jpg" class="w-50" style="margin-bottom: 5px" />
                                     <p>Raheel Chaudhry</p>
                                     <p>M: 1-416-786-1717</p>
                                     <a href="mailto:raheel@teamofaces.com" style="margin: 0;">raheel@teamofaces.com</a>
@@ -125,7 +131,9 @@
         <div class="container">
             <div class="heading text-center">
                 <div>
-                    <h1 class="info-title"><span>Buying</span></h1>
+                    <h1 class="info-title">
+                        <span>Buying</span>
+                    </h1>
                 </div>
             </div>
             <div class="container-fluid text-center">
@@ -162,13 +170,15 @@
                 </div>
             </div>
         </div>
-    </section>   
+    </section>
     <!-- End of buying Section -->
     <div class="section-divider"></div>
     <section id="selling" class="portfolio lightbg sections page">
         <div class="container">
             <div class="heading text-center">
-                <h1 class="info-title"><span>Selling</span></h1>
+                <h1 class="info-title">
+                    <span>Selling</span>
+                </h1>
             </div>
             <div class="container-fluid text-center">
                 <div class="row content">
@@ -200,7 +210,9 @@
     <section id="investors" class="portfolio lightbg sections page">
         <div class="container">
             <div class="heading text-center">
-                <h1 class="info-title"><span>Investors</span></h1>
+                <h1 class="info-title">
+                    <span>Investors</span>
+                </h1>
             </div>
             <div class="container-fluid text-center">
                 <div class="row content">
@@ -228,7 +240,9 @@
     <section id="why-us" class="portfolio lightbg sections page">
         <div class="container">
             <div class="heading text-center">
-                <h1 class="info-title"><span>Why Us?</span></h1>
+                <h1 class="info-title">
+                    <span>Why Us?</span>
+                </h1>
             </div>
             <div class="container-fluid text-center">
                 <div class="row content">
@@ -249,7 +263,9 @@
     <section id="testimonial" class="portfolio lightbg sections page">
         <div class="container">
             <div class="heading text-center">
-                <h1 class="info-title"><span>Testimonials</span></h1>
+                <h1 class="info-title">
+                    <span>Testimonials</span>
+                </h1>
             </div>
             <div class="container-fluid text-center">
                 <div class="row content">
@@ -291,66 +307,49 @@
             <div class="row contact-row">
                 <div class="contact-form">
                     <h1>Ask Us Personally</h1>
-                    <form action="" method="POST">
+                    <form id="contact-form" method="POST">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <label for="name">Name *</label>
-                                    <input required type="text" class="form-control" id="name" placeholder="">
+                                    <label for="from_name">Name *</label>
+                                    <input required type="text" class="form-control" id="from_name" placeholder="">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <label for="email">Email *</label>
-                                    <input required type="text" class="form-control" id="email" placeholder="">
+                                    <label for="user_email" >Email *</label>
+                                    <input required type="text" class="form-control" id="user_email" placeholder="">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <label for="phone">Phone Number *</label>
-                                    <input required type="text" class="form-control" id="phone" placeholder="">
+                                    <label for="user_phone">Phone Number *</label>
+                                    <input required type="text" class="form-control" id="user_phone" placeholder="">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <label for="comment">Your Message</label>
-                                    <textarea rows="7" class="form-control" id="comment" placeholder=""></textarea>
+                                    <label for="user_comment">Your Message</label>
+                                    <textarea rows="7" class="form-control" id="user_comment" placeholder=""></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="contact-btn">
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <button type="submit" class="btn btn-primary send-button">Send Email</button>
                         </div>
                     </form>
+                    <br />
+                    <div class="alert alert-success" id="success-alert">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        Email Successfully Sent
+                    </div>
                 </div>
-                <!-- <div class="row">
-                            <div class="col-md-2 col-sm-2 col-xs-12">
-                                <img src="./images/RaheelChaudhry.png" class="w-50 profile" />
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12">
-                                <div class="card-block">
-                                    <h3 class="card-title">Raheel Chaudhry</h3>
-                                    <h4 class="card-text">Direct : 1-416-786-1717</h4>
-                                    <a href="mailto:raheel@teamofaces.com">raheel@teamofaces.com</a>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-12">
-                                <img src="./images/KafeelChaudhry.png" class="w-50 profile" />
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-12">
-                                <div class="card-block">
-                                    <h3 class="card-title">Kafeel Chaudhry</h3>
-                                    <h4 class="card-text">Direct : 1-416-786-4300</h4>
-                                    <a href="mailto:kafeel@teamofaces.com">kafeel@teamofaces.com</a>
-                                </div>
-                            </div>
-                        </div> -->
             </div>
 
         </div>

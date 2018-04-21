@@ -2,18 +2,18 @@
 
 
 jQuery(document).ready(function ($) {
-	
-	
+
+
 	/*---------------------------------------------*
      * Preloader
      ---------------------------------------------*/
-	 
-	$(window).load(function () {
-		$(".loaded").fadeOut();
-		$(".preloader").delay(1000).fadeOut("slow");
-	});
-	
-	
+
+    $(window).load(function () {
+        $(".loaded").fadeOut();
+        $(".preloader").delay(1000).fadeOut("slow");
+    });
+
+
     /*---------------------------------------------*
      * Mobile menu
      ---------------------------------------------*/
@@ -60,8 +60,8 @@ jQuery(document).ready(function ($) {
         $('.filters-button-group').on('click', 'button', function () {
             var filterValue = $(this).attr('data-filter');
             // use filterFn if matches value
-            filterValue = filterFns[ filterValue ] || filterValue;
-            $grid.isotope({filter: filterValue});
+            filterValue = filterFns[filterValue] || filterValue;
+            $grid.isotope({ filter: filterValue });
         });
         // change is-checked class on buttons
         $('.button-group').each(function (i, buttonGroup) {
@@ -86,7 +86,7 @@ jQuery(document).ready(function ($) {
     });
 
     $('.scrollup').click(function () {
-        $("html, body").animate({scrollTop: 0}, 1000);
+        $("html, body").animate({ scrollTop: 0 }, 1000);
         return false;
     });
 
@@ -121,7 +121,7 @@ jQuery(document).ready(function ($) {
      ---------------------------------------------*/
 
     $.localScroll();
-    
+
     /*---------------------------------------------*
      * Gallery Pop Up Animation
      ---------------------------------------------*/
@@ -139,10 +139,10 @@ jQuery(document).ready(function ($) {
      * Counter 
      ---------------------------------------------*/
 
-//    $('.statistic-counter').counterUp({
-//        delay: 10,
-//        time: 2000
-//    });
+    //    $('.statistic-counter').counterUp({
+    //        delay: 10,
+    //        time: 2000
+    //    });
 
 
 
@@ -151,10 +151,10 @@ jQuery(document).ready(function ($) {
      * WOW
      ---------------------------------------------*/
 
-//        var wow = new WOW({
-//            mobile: false // trigger animations on mobile devices (default is true)
-//        });
-//        wow.init();
+    //        var wow = new WOW({
+    //            mobile: false // trigger animations on mobile devices (default is true)
+    //        });
+    //        wow.init();
 
 
     /* ---------------------------------------------------------------------
@@ -187,7 +187,39 @@ jQuery(document).ready(function ($) {
         }
 
     });
-
-
+    $("#success-alert").hide();
     //End
 });
+
+var contactForm = $("form#contact-form");
+contactForm.submit(function (event) {
+    event.preventDefault();
+
+    var service_id = "default_service";
+    var template_id = "ask_us_anything";
+    var templateParams = {
+        from_name: contactForm.find('input[id="from_name"]').val(),
+        user_email: contactForm.find('input[id="user_email"]').val(),
+        user_phone: contactForm.find('input[id="user_phone"]').val(),
+        user_comment: contactForm.find('textarea[id="user_comment"]').val()
+    }
+    contactForm.find("button").text("Sending...");
+    emailjs.send(service_id, template_id, templateParams)
+        .then(function () {
+            $("#success-alert").fadeTo(2000, 500).slideUp(500, function(){
+                $("#success-alert").slideUp(500);
+            });
+            contactForm.find('input[id="from_name"]').val('');
+            contactForm.find('input[id="user_email"]').val('');
+            contactForm.find('input[id="user_phone"]').val('');
+            contactForm.find('textarea[id="user_comment"]').val('');
+            contactForm.find("button").text("Send Email");
+        }, function (err) {
+            alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+            contactForm.find("button").text("Send Email");
+        });
+    return false;
+});
+
+
+

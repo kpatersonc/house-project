@@ -11,6 +11,12 @@
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_TKT5u4bEjFqmU9gzjoOxy");
+        })();
+    </script>
     <style>
         body {
             color: #f0df98ff;
@@ -98,12 +104,12 @@
                 
                 <div class="evaluation-form">
                         <h1>Free No Obligation Home Evaluation</h1>
-                    <form action="" method="POST">
+                    <form id="evaluation-form" method="POST">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label for="name">Name *</label>
-                                    <input required type="text" class="form-control" id="name" placeholder="">
+                                    <input required type="text" class="form-control" id="from_name" placeholder="">
                                 </div>
                             </div>
                         </div>
@@ -111,7 +117,7 @@
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label for="email">Email *</label>
-                                    <input required type="text" class="form-control" id="email" placeholder="">
+                                    <input required type="text" class="form-control" id="user_email" placeholder="">
                                 </div>
                             </div>
                         </div>
@@ -119,7 +125,7 @@
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label for="phone">Phone Number *</label>
-                                    <input required type="text" class="form-control" id="phone" placeholder="">
+                                    <input required type="text" class="form-control" id="user_phone" placeholder="">
                                 </div>
                             </div>
                         </div>
@@ -127,7 +133,7 @@
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label for="address">Address *</label>
-                                    <input required type="text" class="form-control" id="address" placeholder="">
+                                    <input required type="text" class="form-control" id="user_address" placeholder="">
                                 </div>
                             </div>
                         </div>
@@ -135,7 +141,7 @@
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label for="city">City *</label>
-                                    <input required type="text" class="form-control" id="city" placeholder="">
+                                    <input required type="text" class="form-control" id="user_city" placeholder="">
                                 </div>
                             </div>
                         </div>
@@ -143,14 +149,19 @@
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label for="comment">Comment</label>
-                                    <textarea rows="7" class="form-control" id="comment" placeholder=""></textarea>
+                                    <textarea rows="7" class="form-control" id="user_comment" placeholder=""></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="evaluation-btn">
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <button type="submit" class="btn btn-primary send-button">Send Email</button>
                         </div>
                     </form>
+                    <br />
+                    <div class="alert alert-success" id="success-alert">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        Email Successfully Sent
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,7 +170,7 @@
         </div>
         <!-- /container -->
     </section>
-
+    <script src="assets/js/home-evaluation.js"></script>
 </body>
 
 </html>
