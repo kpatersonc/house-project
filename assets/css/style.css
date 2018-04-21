@@ -274,11 +274,6 @@ section .subtitle-half h5 {
     padding-bottom: 100px;
     color: #ffffff;
 }
-.image-container {
-    height: 93vh;
-    position: relative;
-    text-align:center;
-}
 .no-padding {
     padding: 0 !important;
 }
@@ -808,6 +803,11 @@ textarea::-ms-input-placeholder
 }
 
 /* Home view */
+.image-container {
+    height: 98vh;
+    position: relative;
+    text-align:center;
+}
 .profile-card {      
     position: absolute;
     background:  rgba(5, 5, 5, 0.747);
@@ -845,6 +845,19 @@ textarea::-ms-input-placeholder
 
 .left {
     left: 0;
+}
+
+.home-text {
+    position: absolute;
+    bottom: 50%;
+    background:  rgba(5, 5, 5, 0.747);
+    border-radius: 5px;
+    color: #f0df98ff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 1px;
 }
 /*Scroll Up*/
 
