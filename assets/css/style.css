@@ -254,7 +254,7 @@ section .subtitle-half h5 {
     letter-spacing: 1px;
 }
 .overlay {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
     width: 100%;
     min-height: 100vh;
 }
@@ -275,7 +275,9 @@ section .subtitle-half h5 {
     color: #ffffff;
 }
 .image-container {
-    height: 90vh;
+    height: 93vh;
+    position: relative;
+    text-align:center;
 }
 .no-padding {
     padding: 0 !important;
@@ -806,19 +808,43 @@ textarea::-ms-input-placeholder
 }
 
 /* Home view */
-.profile-award {      
-    position: relative;
-    top: 75vh;
-    max-height: 30vh;
+.profile-card {      
+    position: absolute;
+    background:  rgba(5, 5, 5, 0.747);
+    padding: 1px;
+    color: #f0df98ff;
+    text-align: center;
+    word-wrap: break-word;
+    font-weight: bold;
+    border-radius: 5px;
+    bottom: 0;    
+}
+
+.profile-card p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.award-card {
+    padding: 0px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.award-card img {
+    padding: 5px;
+    background:  rgba(5, 5, 5, 0.747);
+    border-radius: 5px;
 }
 
 .right {    
-    float: right;
+    right: 0;
     
 }
 
 .left {
-    float: left;
+    left: 0;
 }
 /*Scroll Up*/
 
