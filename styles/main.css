@@ -173,6 +173,9 @@ h1 span.shrink {
     .page {
         height: 100vh;
     }
+    .award-logo{
+        height: 100px;
+    }
 }
 
 .section-divider {

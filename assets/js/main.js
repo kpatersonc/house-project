@@ -191,8 +191,8 @@ jQuery(document).ready(function ($) {
     //End
 
     //Set carousel for mobiles on load
-    if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        $('.testimonals-images').owlCarousel({
+    if ((/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+        $('.mobile-carousel-images').owlCarousel({
             responsiveClass: true,
             autoplay: false,
             items: 1,
