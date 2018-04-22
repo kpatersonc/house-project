@@ -265,6 +265,9 @@ jQuery(document).ready(function ($) {
             $('#logo').css("width","7%");
             $('#logo').css("height","7%");
             $('#logo').css("left","45.5%");
+            $('.share-buttons').css("position", "fixed");
+            $('.share-buttons').css("top", 0);
+            $('.share-buttons').css("right", 0);
         }
         else {
             $('.navbar').css("margin-top", 120);
@@ -273,6 +276,7 @@ jQuery(document).ready(function ($) {
             $('#logo').css("width","15%");
             $('#logo').css("height","15%");
             $('#logo').css("left","42.5%");
+            $('.share-buttons').css("position", "relative");
         }
     });
 });

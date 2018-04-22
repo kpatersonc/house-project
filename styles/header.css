@@ -56,9 +56,13 @@ header {
     margin: 8px 6px 0 0px;
     border-radius: 3px;
 }
-
+.share-buttons {
+    z-index: 2000;
+    position: relative;
+}
 .share-buttons .fa {
     padding: 0.5%;
+    font-size: 2em;
 }
 
 .fa:hover {
