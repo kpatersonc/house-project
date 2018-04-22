@@ -758,7 +758,7 @@ textarea::-ms-input-placeholder
 /* Contact Section */
 
 .contact{
-    background: url("../images/backyardfire.jpg");
+    background: url("../../images/bg-selling.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
