@@ -26,12 +26,17 @@
         }
 
         .evaluation-form {
-            padding: 10px;        
+            padding: 10px;
         }
 
         .evaluation {
             padding: 5%;
-            background: rgba(5, 5, 5, 0.747);
+            background: rgba(5, 5, 5, 0.336);
+        }
+
+        .evaluation-button {
+            font-size: 2em;
+            border-radius: 10px;
         }
 
         @media screen and (max-width: 1000px) {
@@ -39,70 +44,22 @@
                 width: 100%;
                 height: 100%;
                 margin-top: 0;
-                background: rgba(5, 5, 5, 0.397);
+                background: rgba(5, 5, 5, 0.288);
             }
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <div>
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="#">Investor Portal</a>
-                            </li>
-                            <!-- <li class="active"><a href="#">Home</a></li>        
-                                <li><a href="#">Projects</a></li>  If we need to add nav in the future its here
-                                <li><a href="#">Contact</a></li> -->
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-user"></span> Member Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="share-buttons">
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-facebook"></a>
-            </div>
-            <img src="./images/TeamOfAcesLogo.png" class="center" id="logo" />
-            <div class="award-container">
-                <span id="our-awards">Our Awards</span>
-                <img src="./images/HallOfFameAward.png" />
-                <img src="./images/ExecutiveClubAward.png" />
-                <img src="./images/100ClubAward.png" />
-                <img src="./images/ChairmanClubAward.png" />
-                <img src="./images/DiamondClubAward.png" />
-                <img src="./images/Number1Remax.png" id="num-1-remax" />
-            </div>
-        </div>
-        <div class=""></div>
-    </header>
-
+    <div class="logo">
+        <img src="./images/TeamOfAcesLogo.png" class="center" id="logo">
+    </div>
     <section class="evaluation">
         <div class="container">
             <!-- Example row of columns -->
             <div class="row">
-                
                 <div class="evaluation-form">
-                        <h1>Free No Obligation Home Evaluation</h1>
+                    <h1>Free No Obligation Home Evaluation</h1>
                     <form id="evaluation-form" method="POST">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -153,7 +110,7 @@
                             </div>
                         </div>
                         <div class="evaluation-btn">
-                            <button type="submit" class="btn btn-primary send-button">Send Email</button>
+                            <button type="submit" class="btn btn-primary send-button evaluation-button">Send Email</button>
                         </div>
                     </form>
                     <br />
