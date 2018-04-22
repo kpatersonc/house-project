@@ -2,18 +2,18 @@
 
 
 jQuery(document).ready(function ($) {
-
-
+	
+	
 	/*---------------------------------------------*
      * Preloader
      ---------------------------------------------*/
-
-    $(window).load(function () {
-        $(".loaded").fadeOut();
-        $(".preloader").delay(1000).fadeOut("slow");
-    });
-
-
+	 
+	$(window).load(function () {
+		$(".loaded").fadeOut();
+		$(".preloader").delay(1000).fadeOut("slow");
+	});
+	
+	
     /*---------------------------------------------*
      * Mobile menu
      ---------------------------------------------*/
@@ -60,8 +60,8 @@ jQuery(document).ready(function ($) {
         $('.filters-button-group').on('click', 'button', function () {
             var filterValue = $(this).attr('data-filter');
             // use filterFn if matches value
-            filterValue = filterFns[filterValue] || filterValue;
-            $grid.isotope({ filter: filterValue });
+            filterValue = filterFns[ filterValue ] || filterValue;
+            $grid.isotope({filter: filterValue});
         });
         // change is-checked class on buttons
         $('.button-group').each(function (i, buttonGroup) {
@@ -86,7 +86,7 @@ jQuery(document).ready(function ($) {
     });
 
     $('.scrollup').click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 1000);
+        $("html, body").animate({scrollTop: 0}, 1000);
         return false;
     });
 
@@ -121,7 +121,7 @@ jQuery(document).ready(function ($) {
      ---------------------------------------------*/
 
     $.localScroll();
-
+    
     /*---------------------------------------------*
      * Gallery Pop Up Animation
      ---------------------------------------------*/
@@ -139,10 +139,10 @@ jQuery(document).ready(function ($) {
      * Counter 
      ---------------------------------------------*/
 
-    //    $('.statistic-counter').counterUp({
-    //        delay: 10,
-    //        time: 2000
-    //    });
+//    $('.statistic-counter').counterUp({
+//        delay: 10,
+//        time: 2000
+//    });
 
 
 
@@ -151,10 +151,10 @@ jQuery(document).ready(function ($) {
      * WOW
      ---------------------------------------------*/
 
-    //        var wow = new WOW({
-    //            mobile: false // trigger animations on mobile devices (default is true)
-    //        });
-    //        wow.init();
+//        var wow = new WOW({
+//            mobile: false // trigger animations on mobile devices (default is true)
+//        });
+//        wow.init();
 
 
     /* ---------------------------------------------------------------------
@@ -189,6 +189,36 @@ jQuery(document).ready(function ($) {
     });
     $("#success-alert").hide();
     //End
+
+        //Set carousel for mobiles on load
+    if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+        $('.testimonals-images').owlCarousel({
+            responsiveClass: true,
+            autoplay: false,
+            items: 1,
+            loop: true,
+            dots: true,
+            autoplayHoverPause: true,
+            responsive: {
+                // breakpoint from 0 up
+                // breakpoint from 480 up
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 1
+                },
+                // breakpoint from 768 up
+                768: {
+                    items: 1
+                },
+                980: {
+                    items: 1
+                }
+            }
+
+        });
+    }
 });
 
 var contactForm = $("form#contact-form");
