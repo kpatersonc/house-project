@@ -19,15 +19,14 @@ h1 {
 #logo-small {
     display: none;
     max-height: 10vh;
-
 }
 
-h1 span{
-    background-image:url(../images/elegant_border.jpg);
+h1 span {
+    background-image: url(../images/elegant_border.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    color:#f0df98ff;
+    color: #f0df98ff;
     padding: 7%;
 }
 
@@ -37,7 +36,6 @@ h1 span.shrink {
     font-weight: bold;
 }
 
-
 .text-container {
     background: rgba(5, 5, 5, 0.747);
     border-radius: 5px;
@@ -45,20 +43,21 @@ h1 span.shrink {
     font-style: italic;
     margin-bottom: 5%;
 }
-.text-container p{
-    font-size:1.5rem;
+
+.text-container p {
+    font-size: 1.5rem;
     line-height: 2.0rem;
 }
 
-.text-container h2{
+.text-container h2 {
     margin-bottom: 10px;
 }
 
-.info-title{
+.info-title {
     color: black !important;
 }
 
-.page{
+.page {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -76,6 +75,7 @@ h1 span.shrink {
     background-color: black;
     border-color: #f0df98ff;
 }
+
 .send-button:active {
     color: #f0df98ff;
     background-color: black;
@@ -83,123 +83,139 @@ h1 span.shrink {
 }
 
 /* Featured Listings */
+
 #feature-listings {
     width: 100%;
     background-image: url("../images/bg-testimonials.jpg");
-  }
-  #feature-listings .text-color {
-      color: #f0df98;
-  }
-  #feature-listings .text-center {
-      margin-top:20px;
-  }
-  
-  #feature-listings .text-center h2 {
-      padding: 30px;
-  }
-  #feature-listings .listing-items{
-    width:80%;
-    margin-left:10%;
-  }
-  #feature-listings .content .list-info{
-    display:inline-block;
-    width:100%;
-    padding:0 10px;
-  }
-  #feature-listings .content .list-info img{
-    width:100%; 
-  }
-  #feature-listings .content .city{
-      text-align: center;        
-  }
-  #feature-listings .content .list-info img{
-    height:25vh;
-  }
-  #feature-listings .content .list-info .list-block{
-    text-align:center;
-  }
+}
+
+#feature-listings .text-color {
+    color: #f0df98;
+}
+
+#feature-listings .text-center {
+    margin-top: 20px;
+}
+
+#feature-listings .text-center h2 {
+    padding: 30px;
+}
+
+#feature-listings .listing-items {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#feature-listings .content .list-info {
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px;
+}
+
+#feature-listings .content .list-info img {
+    width: 100%;
+}
+
+#feature-listings .content .city {
+    text-align: center;
+}
+
+#feature-listings .content .list-info img {
+    height: 25vh;
+}
+
+#feature-listings .content .list-info .list-block {
+    text-align: center;
+}
+
 .listings-container-first {
     background: rgba(5, 5, 5, 0.747);
     margin-top: 7vh;
 }
+
 .listings-container {
     background: rgba(5, 5, 5, 0.747);
 }
-  .slick-next, .slick-prev{
-      right: -8%;
-      height: 50px;
-      width: 50px;
-      background: #f0df98;
-      border-radius: 100%;
-      background-position: center;
-      top: 35%;
-      z-index:5;
-      
-  }
-  .slick-prev{
-     left: -8%;
-  }
-  
-  .slick-next:before{
-      content: "\e080";
-      font-family: 'Glyphicons Halflings';
-   }
-   
-   .slick-prev:before{
-      content: "\e079";
-      font-family: 'Glyphicons Halflings';
-   }
-   .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
-      color: transparent;
-      outline: none;
-      background: #f0df98;
-    }
 
-@media screen and (min-height: 720px) and (min-width:720px){
-    .page{
+.slick-next, .slick-prev {
+    right: -8%;
+    height: 50px;
+    width: 50px;
+    background: #f0df98;
+    border-radius: 100%;
+    background-position: center;
+    top: 35%;
+    z-index: 5;
+}
+
+.slick-prev {
+    left: -8%;
+}
+
+.slick-next:before {
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+}
+
+.slick-prev:before {
+    content: "\e079";
+    font-family: 'Glyphicons Halflings';
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: #f0df98;
+}
+
+@media screen and (min-height: 720px) and (min-width:720px) {
+    .page {
         height: 100vh;
     }
 }
 
-.section-divider{
+.section-divider {
     background-image: url("../images/gold-page-divider.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:center;
-    background-color:black;
+    background-position: center;
+    background-color: black;
     text-align: center;
     height: 100px;
 }
-@media screen and (max-height: 760px) , screen and (max-width: 420px){
-    .section-divider{
+
+@media screen and (max-height: 760px), screen and (max-width: 420px) {
+    .section-divider {
         height: 50px;
     }
 }
 
-#information{
+#information {
     background-color: black;
     height: 20vh;
 }
-#buying{
+
+#buying {
     background-image: url("../images/bg-buying.jpg");
 }
 
-#selling{
+#selling {
     background-image: url("../images/bg-selling.jpg");
 }
 
-#investors{
+#investors {
     background-image: url("../images/bg-investors.jpg");
 }
 
-#why-us{
+#why-us {
     background-image: url("../images/bg-why-us.jpg")
 }
 
-#testimonial{
+#testimonial {
     background-image: url("../images/bg-testimonials.jpg");
 }
-#investor-portal{
+
+#investor-portal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -207,12 +223,12 @@ h1 span.shrink {
     transform: translate(-50%, -50%);
 }
 
-#investor-portal-container{
+#investor-portal-container {
     height: 150px;
     position: relative;
 }
 
-#selling-service{
+#selling-service {
     font-size: 20px;
 }
 
@@ -223,19 +239,18 @@ h1 span.shrink {
     align-items: center;
 }
 
-.flex-container > div {
+.flex-container>div {
     font-size: 28px;
     margin-top: 10px
 }
 
-
-@media screen and (min-height: 800px)  {
+@media screen and (min-height: 800px) {
     .text-container {
         font-size: 24px;
     }
 }
 
-@media screen and (max-width: 767px)  {
+@media screen and (max-width: 767px) {
     .profile-container {
         display: unset!important;
     }
@@ -244,15 +259,14 @@ h1 span.shrink {
     }
 }
 
-@media screen and (min-width: 768px){
-    #buying-location{
+@media screen and (min-width: 768px) {
+    #buying-location {
         font-size: 20px;
-        width: 20%;      
+        width: 20%;
     }
 }
 
-.buying-link{
+.buying-link {
     font-size: 20px;
     color: #f0df98ff;
 }
-

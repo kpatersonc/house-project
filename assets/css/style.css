@@ -462,7 +462,7 @@ textarea::-ms-input-placeholder
 }
 .navbar {
     min-height: 50px;
-    padding-bottom: 4vh;
+    /* padding-bottom: 4vh; */
     margin-top: 110px;
 }
 .navbar-brand {

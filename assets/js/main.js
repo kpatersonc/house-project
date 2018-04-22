@@ -264,7 +264,7 @@ jQuery(document).ready(function ($) {
             $('#logo').css("position", "fixed");
             $('#logo').css("width","7%");
             $('#logo').css("height","7%");
-            $('#logo').css("left","47.5%");
+            $('#logo').css("left","45.5%");
         }
         else {
             $('.navbar').css("margin-top", 120);
