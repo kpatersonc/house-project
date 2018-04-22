@@ -18,6 +18,16 @@
     .image-container {
         height: 95vh;
     }
+    h1 span.shrink {
+        padding: 3%;
+        font-size: 0.5em;
+    }
+    .info-title {
+        margin-top: -1vh!important;
+    }
+    .listings-container-first {
+        margin-top: 0.5vh;
+    }
 }
 
 /* Portrait tablets and small desktops */
@@ -148,9 +158,6 @@
         line-height: 50px;
         bottom: 90px;
     }
-    .navbar {
-        background: #00a5ff;
-    }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         margin-top: 20px;
     }
@@ -181,11 +188,20 @@
     .navbar {
         padding-bottom: 4vh!important;
     }
+    h1 span.shrink {
+        padding: 4%;
+        font-size: 0.8em;
+    }
 }
 
+/* iPhone 5SE Landscape */
 @media (min-width: 481px) and (max-width: 750px){
     .navbar {
         padding-bottom: 0!important;
+    }
+    h1 span.shrink {
+        padding: 5%;
+        font-size: 0.6em;
     }
 }
 
@@ -291,6 +307,10 @@
     .navbar-header {
         padding-bottom: 4vh!important;
     }
+    h1 span.shrink {
+        padding: 7%;
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 320px) {
@@ -337,6 +357,10 @@
     }
     .navbar-header {
         padding-bottom: 1vh!important;
+    }
+    h1 span.shrink {
+        padding: 7%;
+        font-size: 0.8em;
     }
 
 }
