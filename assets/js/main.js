@@ -261,10 +261,18 @@ jQuery(document).ready(function ($) {
         if (window.scrollY > 0) {
             $('.navbar').css("margin-top", 0);
             $('.navbar').css("padding", 15);
+            $('#logo').css("position", "fixed");
+            $('#logo').css("width","7%");
+            $('#logo').css("height","7%");
+            $('#logo').css("left","47.5%");
         }
         else {
             $('.navbar').css("margin-top", 120);
             $('.navbar').css("padding", 0);
+            $('#logo').css("position", "relative");
+            $('#logo').css("width","15%");
+            $('#logo').css("height","15%");
+            $('#logo').css("left","42.5%");
         }
     });
 });
