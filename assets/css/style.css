@@ -465,6 +465,10 @@ textarea::-ms-input-placeholder
     /* padding-bottom: 4vh; */
     margin-top: 110px;
 }
+.nav-share-buttons {
+    top: 0;
+    display: none;
+}
 .navbar-brand {
     padding: 0;
 }

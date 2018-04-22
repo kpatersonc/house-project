@@ -46,15 +46,19 @@ header {
 }
 
 .fa {
-    font-size: 13px;
+    font-size: 1em;
     text-align: center;
     text-decoration: none;
     float: right;
     background: white;
     color: black;
-    padding: 5px;
-    margin: 50px 3px 0 3px;
+    padding: 1%;
+    margin: 8px 6px 0 0px;
     border-radius: 3px;
+}
+
+.share-buttons .fa {
+    padding: 0.5%;
 }
 
 .fa:hover {

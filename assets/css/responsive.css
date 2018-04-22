@@ -22,6 +22,9 @@
     #logo-small {
         display: block!important;
     }
+    .nav-share-buttons {
+        display: block;
+    }
     .navbar {
         margin: 0!important;
         padding: 0!important;
@@ -42,6 +45,44 @@
     }
     .home-text {
         bottom: 55%;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 white
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+        margin-top: 5vh;
+    }
+    #logo-small {
+        max-height: 8vh;
     }
 }
 
@@ -69,16 +110,60 @@
     #logo-small {
         display: block!important;
     }
+    .nav-share-buttons {
+        display: block;
+    }
     .navbar {
         margin: 0!important;
         padding: 0!important;
-        padding-bottom: 0.5vh!important;
+        padding-bottom: 3vh!important;
+    }
+    .collapse {
+        display: visible;
     }
     .image-container {
         height: 95vh;
     }
     .home-text {
         bottom: 55%;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 white
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+        margin-top: 1vh;
+    }
+    #logo-small {
+        max-height: 8vh;
     }
 }
 
@@ -112,6 +197,9 @@
     }
     .image-container {
         height: 95vh;
+    }
+    .collapse.in{
+        margin-top: 0;
     }
 
 }
@@ -209,6 +297,9 @@
     h1 span.shrink {
         padding: 4%;
         font-size: 0.8em;
+    }
+    .collapse.in{
+        margin-top: 0;
     }
 }
 
