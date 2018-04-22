@@ -1,161 +1,598 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
 
 <head>
-    <title>Team Of Aces</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Team Of Aces</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+
+
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="assets/css/plugins.css" />
+    <link rel="stylesheet" href="assets/css/lora-web-font.css" />
+    <link rel="stylesheet" href="assets/css/opensans-web-font.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Theme Responsive css-->
+
+    <!--Local CSS-->
     <link rel="stylesheet" type="text/css" href="./styles/header.css">
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
-    <link rel="stylesheet" type="text/css" href="./styles/footer.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        .image-container {
-            width: 100%;
-            height: 30%;
-        }
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="./scripts/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./scripts/slick/slick-theme.css" />
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-        .row.content {
-            padding: 0;
-            background: black;
-        }
-
-        .profile {
-            height: 15vh;
-        }
-
-        .profile-container {
-            display: inline-flex;
-        }
-
-        .card-info {
-            width: unset;
-        }
-
-        .card-horizontal {
-            margin-right: 30%;
-        }
-
-        @media screen and (max-width: 767px) {
-            .profile-container {
-                display: unset!important;
-            }
-            .card-horizontal {
-                margin-right: 0!important;
-            }
-            .image-container {
-                display: none;
-            }
-            .profile {
-                height: 30vh;
-            }
-        }
-    </style>
+    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_TKT5u4bEjFqmU9gzjoOxy");
+        })();
+    </script>
 </head>
 
-<body>
-    <header>
-        <div>
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="#">Investor Portal</a>
-                            </li>
-                            <!-- <li class="active"><a href="#">Home</a></li>        
-                                <li><a href="#">Projects</a></li>  If we need to add nav in the future its here
-                                <li><a href="#">Contact</a></li> -->
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-log-in"></span> Member Login</a>
-                            </li>
-                        </ul>
+<body data-spy="scroll" data-target="#main_navbar">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class='preloader'>
+        <div class='loaded'>&nbsp;</div>
+    </div>
+    <div class="logo">
+        <div class="share-buttons">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+        <a href="index.html">
+            <img src="./images/TeamOfAcesLogo.png" class="center" id="logo">
+        </a>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top" id="main_navbar">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/TeamOfAcesLogo.png" alt="logo" id="logo-small" />
+                </a>
+                <div class="nav-share-buttons">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a onclick="navClick('index.html#home')">Home</a>
+                    </li>
+                    <li>
+                        <a onclick="navClick('index.html#featured-listings')">Featured Listings</a>
+                    </li>
+                    <li>
+                        <a onclick="navClick('index.html#information')">Information</a>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a onclick="navClick('index.html#testimonials')">Testimonials</a>
+                    </li>
+                    <li>
+                        <a title="Coming Soon">Investor Portal</a>
+                    </li>
+                    <li>
+                        <a title="Coming Soon">Member Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <a name="home" class="anchor"></a>
+    <!--Home page style-->
+    <header id="home" class="home">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="home-wrapper">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="home-text">
+                                We are experts in all aspects of real estate, from residential to commercial and the development of custom projects. Leverage
+                                our success in this industry and our well established network to work for you in realizing
+                                your investment ambitions!
+                            </div>
+                            <div class="image-container">
+                                <div class="col-md-3 col-sm-3 col-xs-4 profile-card left">
+                                    <img src="./images/Kafeel-Profile-Current.jpg" class="w-50" style="margin-bottom: 5px" />
+                                    <p>Kafeel Chaudhry</p>
+                                    <p>M: 1-416-786-4300</p>
+                                    <a href="mailto:kafeel@teamofaces.com" style="margin: 0;">kafeel@teamofaces.com</a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6 award-card">
+                                    <img src="./images/Kafeel-VegasAward2.jpg" class="w-50 col-md-4 col-sm-4 col-xs-4" />
+                                    <img src="./images/Kafeel-R4Award1.jpg" class="w-50 col-md-4 col-sm-4 col-xs-4" />
+                                    <img src="./images/Kafeel-VegasAward4.jpg" class="w-50 col-md-4 col-sm-4 col-xs-4" />
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-4 profile-card right">
+                                    <img src="./images/Raheel-Profile-Current.jpg" class="w-50" style="margin-bottom: 5px" />
+                                    <p>Raheel Chaudhry</p>
+                                    <p>M: 1-416-786-1717</p>
+                                    <a href="mailto:raheel@teamofaces.com" style="margin: 0;">raheel@teamofaces.com</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
-            <div class="share-buttons">
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-facebook"></a>
-            </div>
-            <img src="./images/TeamOfAcesLogo.png" class="center" id="logo" />
-            <div class="award-container">
-                <span id="our-awards">Our Awards</span>
-                <img src="./images/HallOfFameAward.png" />
-                <img src="./images/ExecutiveClubAward.png" />
-                <img src="./images/100ClubAward.png" />
-                <img src="./images/ChairmanClubAward.png" />
-                <img src="./images/DiamondClubAward.png" />
-                <img src="./images/Number1Remax.png" id="num-1-remax" />
             </div>
         </div>
     </header>
-
-    <div class="container-fluid text-center">
-        <div class="row content">
-            <div class="image-container">
-                <img src="./images/bg-house.png" />
-            </div>
-            <div class="container py-3 profile-container">
-                <div class="card card-horizontal">
-                    <div class="row">
-                        <div class="col-md-8 card-info">
-                            <img src="./images/RaheelChaudhry.png" class="w-50 profile" />
+    <a id="featured-listings" name="featured-listings" class="anchor"></a>
+    <div class="section-divider"></div>
+    <section id="feature-listings" class="portfolio lightbg sections page text-center">
+        <div class="container">
+            <div class="featured-listings">
+                <div class="row content">
+                    <h1 class="info-title" style="margin-top: 1vh;">
+                        <span class="shrink">Featured Listings</span>
+                    </h1>
+                    <div class="text-left text-color">
+                        <div class="listings-container-first">
+                            <h3 class="city">Oakville</h3>
+                            <div class="listing-items">
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/oakville-real-estate/na-1115-melvin-ave-na-crea_id19234230-lst/">
+                                        <img src="./images/oakville-listing-1.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$3,699,000</h4>
+                                        <p class="list-text">1115 Melvin Ave, Oakville
+                                            <br> 4 + 1 bedrooms, 5 bath</p>
+                                    </div>
+                                </div>
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/oakville-real-estate/na-1498-caulder-drive-na-crea_id19247219-lst/">
+                                        <img src="./images/oakville-listing-2.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$4,500,000</h4>
+                                        <p class="list-text">1498 Cauler Drive, Oakville
+                                            <br> 4 + 1 bedrooms, 5 bath</p>
+                                    </div>
+                                </div>
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/oakville-real-estate/na-166-westminster-dr-na-crea_id19300566-lst/">
+                                        <img src="./images/oakville-listing-3.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$3,599,900</h4>
+                                        <p class="list-text">166 Westminster Dr, Oakville
+                                            <br> 5+1 bedrooms, 5 bath</p>
+                                    </div>
+                                </div>
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/oakville-real-estate/na-15-mississaga-street-na-crea_id19247198-lst/">
+                                        <img src="./images/oakville-listing-4.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$5,500,000</h4>
+                                        <p class="list-text">15 Mississaga Street, Oakville
+                                            <br> 3 bedrooms, 4 bath</p>
+                                    </div>
+                                </div>
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/oakville-real-estate/na-120-paliser-crt-treb_w4020044-lst/">
+                                        <img src="./images/oakville-listing-5.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$2,399,900</h4>
+                                        <p class="list-text">120 Paliser Crt, Oakville
+                                            <br> 6 bedrooms, 7 bath</p>
+                                    </div>
+                                </div>
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/oakville-real-estate/na-108-paliser-crt-treb_w4019296-lst/">
+                                        <img src="./images/oakville-listing-6.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$2,199,900</h4>
+                                        <p class="list-text">108 Paliser Crt, Oakville
+                                            <br> 5 bedrooms, 6 bath</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-8 card-info">
-                            <div class="card-block">
-                                <h3 class="card-title">Raheel Chaudhry</h3>
-                                <h4 class="card-text">Direct : 1-416-786-1717</h4>
-                                <a href="mailto:raheel@teamofaces.com">raheel@teamofaces.com</a>
+                    </div>
+                    <div class="text-left text-color">
+                        <div class="listings-container">
+                            <h3 class="city">Mississauga</h3>
+                            <div class="listing-items">
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/mississauga-real-estate/na-4077-mississauga-rd-na-crea_id19316180-lst/">
+                                        <img src="./images/mississauga-listing-1.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$3,680,000</h4>
+                                        <p class="list-text">4077 Mississauga Rd, Mississauga
+                                            <br> 5 + 2 bedrooms, 8 bath</p>
+                                    </div>
+                                </div>
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/mississauga-real-estate/na-151-veronica-dr-na-crea_id19128368-lst/">
+                                        <img src="./images/mississauga-listing-2.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$4,750,000</h4>
+                                        <p class="list-text">151 Veronica Dr, Mississauga
+                                            <br> 5 + 1 bedrooms, 7 bath</p>
+                                    </div>
+                                </div>
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/mississauga-real-estate/na-1417-birchview-dr-na-crea_id19114299-lst/">
+                                        <img src="./images/mississauga-listing-3.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$3,388,000</h4>
+                                        <p class="list-text">1417 Birchview Dr, Mississauga
+                                            <br> 4 bedrooms, 6 bath</p>
+                                    </div>
+                                </div>
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/mississauga-real-estate/na-4077-mississauga-rd-na-crea_id19316180-lst/">
+                                        <img src="./images/mississauga-listing-4.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$3,680,000</h4>
+                                        <p class="list-text">4077 Mississauga Rd, Mississauga
+                                            <br> 5 + 2 bedrooms, 8 bath</p>
+                                    </div>
+                                </div>
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/mississauga-real-estate/na-1468-woodeden-dr-na-crea_id19260878-lst/">
+                                        <img src="./images/mississauga-listing-5.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$3,997,000</h4>
+                                        <p class="list-text">1468 Woodeden Dr, Mississauga
+                                            <br> 4 + 2 bedrooms, 6 bath</p>
+                                    </div>
+                                </div>
+                                <div class="list-info">
+                                    <a href="https://www.remax.ca/on/mississauga-real-estate/na-2310-mississauga-rd-na-crea_id19110338-lst/">
+                                        <img src="./images/mississauga-listing-6.jpg" class="w-50 listings" />
+                                    </a>
+                                    <div class="list-block">
+                                        <h4 class="list-title">$3,390,000</h4>
+                                        <p class="list-text">2310 Mississauga Rd, Mississauga
+                                            <br> 5 bedrooms, 7 bath</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="row">
-                        <div class="col-md-8 card-info">
-                            <img src="./images/KafeelChaudhry.png" class="w-50 profile" />
+            </div>
+        </div>
+    </section>
+    <a class="anchor" name="information"></a>
+    <div class="section-divider"></div>
+    <section id="buying" class="portfolio lightbg sections page">
+        <div class="container">
+            <div class="heading text-center">
+                <h1 class="info-title">
+                    <span>Buying</span>
+                </h1>
+            </div>
+            <div class="container-fluid text-center">
+                <div class="row content">
+                    <div class="text-center">
+                        <div class="text-container">
+                            <p>As experts in real estate, we will not only find you a home, we will provide professional advice
+                                and ensure you are making the right investment and leveraging our network will provide financial
+                                support if needed.
+                            </p>
                         </div>
-                        <div class="col-md-8 card-info">
-                            <div class="card-block">
-                                <h3 class="card-title">Kafeel Chaudhry</h3>
-                                <h4 class="card-text">Direct : 1-416-786-4300</h4>
-                                <a href="mailto:kafeel@teamofaces.com">kafeel@teamofaces.com</a>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-container">
+                            <h2>About</h2>
+                            <div class="row">
+                                <div id="buying-location" class="col-md-2 col-sm-2 col-xs-12">
+                                    <a class="buying-link" href="https://www.remax.ca/on/oakville-houses-for-sale/#queryText=Oakville,+ON&minPrice=10000&propertyTypeIds=20&isCommercial=false&showSchools=false&schoolTypes=0,1,2&schoolLevels=0,1,2&schoolPrograms=0,1&schoolIds=&refreshPins=true&gallery.listingPageSize=20&coordinatesFor=Oakville,+ON&mode=Box&province=ON&cityName=Oakville&alt=&zoom=13&south=43.412296043784124&west=-79.74776077270509&north=43.49553801648031&east=-79.49747848510744&listingtab.index=1&mainlist.listingPageSize=10">Oakville</a>
+                                </div>
+                                <div id="buying-location" class="col-md-2 col-sm-2 col-xs-12">
+                                    <a class="buying-link" href="https://www.remax.ca/on/mississauga-real-estate/#queryText=Mississauga,+ON&minPrice=10000&propertyTypeIds=&isCommercial=false&showSchools=false&schoolTypes=0,1,2&schoolLevels=0,1,2&schoolPrograms=0,1&schoolIds=&refreshPins=true&gallery.listingPageSize=20&coordinatesFor=Mississauga,+ON&mode=Box&province=ON&cityName=Mississauga&alt=&zoom=12&south=43.52262044830354&west=-79.87364959716798&north=43.726409294979575&east=-79.37308502197267&listingtab.index=0">Mississauga</a>
+                                </div>
+                                <div id="buying-location" class="col-md-2 col-sm-2 col-xs-12">
+                                    <a class="buying-link" href="https://www.remax.ca/on/burlington-real-estate/#queryText=Burlington,+ON&minPrice=10000&propertyTypeIds=&isCommercial=false&showSchools=false&schoolTypes=0,1,2&schoolLevels=0,1,2&schoolPrograms=0,1&schoolIds=&refreshPins=true&gallery.listingPageSize=20&coordinatesFor=Burlington,+ON&mode=Box&province=ON&cityName=Burlington&alt=&zoom=13&south=43.29391281863575&west=-79.90571975708006&north=43.39627975494297&east=-79.65543746948241&listingtab.index=0">Burlington</a>
+                                </div>
+                                <div id="buying-location" class="col-md-2 col-sm-2 col-xs-12">
+                                    <a class="buying-link" href="https://www.remax.ca/on/milton-real-estate/#queryText=Milton,+ON&minPrice=10000&propertyTypeIds=&isCommercial=false&showSchools=false&schoolTypes=0,1,2&schoolLevels=0,1,2&schoolPrograms=0,1&schoolIds=&refreshPins=true&gallery.listingPageSize=20&coordinatesFor=Milton,+ON&mode=Box&province=ON&cityName=Milton&alt=&zoom=14&south=43.48499340430263&west=-79.93293952941893&north=43.536037200328025&east=-79.8077983856201&listingtab.index=0">Milton</a>
+                                </div>
+                                <div id="buying-location" class="col-md-2 col-sm-2 col-xs-12">
+                                    <a class="buying-link" href="https://www.remax.ca/on/toronto-real-estate/#queryText=Toronto,+ON&minPrice=10000&propertyTypeIds=&isCommercial=false&showSchools=false&schoolTypes=0,1,2&schoolLevels=0,1,2&schoolPrograms=0,1&schoolIds=&refreshPins=true&gallery.listingPageSize=20&coordinatesFor=Toronto,+ON&mode=Box&province=ON&cityName=Toronto&alt=&zoom=11&south=43.4492945340928&west=-79.88326263427736&north=43.85667732876773&east=-78.88213348388673&listingtab.index=0">Toronto</a>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <h2>Information</h2>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <a class="buying-link" href="http://www.tdsb.on.ca">School Locator</a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <a class="buying-link" href="http://www.macleans.ca/economy/the-best-place-to-live-in-ontario-2017/">Best Places To Live</a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <a class="buying-link" href="http://www.remaxactive.ca/buyers/calculators/">Mortgage Calculators</a>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of buying Section -->
+    <div class="section-divider"></div>
+    <section id="selling" class="portfolio lightbg sections page">
+        <div class="container">
+            <div class="heading text-center">
+                <h1 class="info-title">
+                    <span>Selling</span>
+                </h1>
+            </div>
+            <div class="container-fluid text-center">
+                <div class="row content">
+                    <div class="text-center">
+                        <div class="text-container">
+                            <p>Building wealth through real estate begins with selecting the right partners and making the right
+                                decisions when buying and establishing a strategy on how to use your hard earned equity to
+                                grow your portfolio.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-container">
+                            <div class="row">
+                                <div id="selling-service" class="col-md-12">
+                                    <a href="./home-evaluation-form.html">Free No Obligation Home Evaluation</a>
+                                </div>
+                                <div id="selling-service" class="col-md-12">Pre-Selling Renovations</div>
+                                <div id="selling-service" class="col-md-12">Staging Services</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of selling-one Section -->
+    <div class="section-divider"></div>
+    <section id="investors" class="portfolio lightbg sections page">
+        <div class="container">
+            <div class="heading text-center">
+                <h1 class="info-title">
+                    <span>Investors</span>
+                </h1>
+            </div>
+            <div class="container-fluid text-center">
+                <div class="row content">
+                    <div class="text-center">
+                        <div class="text-container">
+                            <p>With an extensive background working with investors globally and servicing projects of $2M-$100M
+                                from structuring financing to project management to construction and ultimately selling,
+                                we are your one-stop real estate partners.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="investor-portal-container" class="text-center">
+                        <div class="text-container" style="height:150px;">
+                            <div class="row">
+                                <a id="investor-portal">Investor Portal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of investor-one Section -->
+    <div class="section-divider"></div>
+    <section id="why-us" class="portfolio lightbg sections page">
+        <div class="container">
+            <div class="heading text-center">
+                <h1 class="info-title">
+                    <span>Why Us?</span>
+                </h1>
+            </div>
+            <div class="container-fluid text-center">
+                <div class="row content">
+                    <div class="text-center">
+                        <div class="text-container">
+                            <p>We are the #1 Team in all of Canada and #3 Worldwide. Our goal is to put our experience and resources
+                                to work for you and realize results!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="text-container">
+                        <div class="row">
+                            <div class="mobile-carousel-images">
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                    <img class="award-logo" src="images/100ClubAward.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                    <img class="award-logo" src="images/ChairmanClubAward.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                    <img class="award-logo" src="images/DiamondClubAward.png">
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                    <img class="award-logo" src="images/ExecutiveClubAward.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                    <img class="award-logo" src="images/HallOfFameAward.jpg">
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                    <img class="award-logo" src="images/Number1Remax.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of why-us-one Section -->
+    <a name="testimonials" class="anchor"></a>
+    <div class="section-divider"></div>
+    <section id="testimonial" class="portfolio lightbg sections page">
+        <div class="container">
+            <div class="heading text-center">
+                <h1 class="info-title">
+                    <span>Testimonials</span>
+                </h1>
+            </div>
+            <div class="container-fluid text-center">
+                <div class="row content">
+                    <div class="text-center">
+                        <div class="text-container">
+                            <p>"Raheel and Kafeel helped us move into our dream home while building our real estate portfolio”
+                            </p>
+                            <p style="text-align: right; padding-right:30px;">- Shawn & Hajar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="text-container">
+                        <div class="row">
+                            <div class="mobile-carousel-images">
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <img src="images/ceremonies1.PNG">
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <img src="images/ceremonies2.PNG">
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <img src="images/ceremonies3.PNG">
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <img src="images/ceremonies4.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of investor-one Section -->
+    <a id="contact"></a>
+    <div class="section-divider"></div>
+    <!-- Sections -->
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <div class="row contact-row">
+                <div class="contact-form">
+                    <h1>Ask Us Personally</h1>
+                    <form id="contact-form" method="POST">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label for="from_name">Name *</label>
+                                    <input required type="text" class="form-control" id="from_name" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label for="user_email">Email *</label>
+                                    <input required type="text" class="form-control" id="user_email" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label for="user_phone">Phone Number *</label>
+                                    <input required type="text" class="form-control" id="user_phone" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label for="user_comment">Your Message</label>
+                                    <textarea rows="7" class="form-control" id="user_comment" placeholder=""></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-btn">
+                            <button type="submit" class="btn btn-primary send-button">Send Email</button>
+                        </div>
+                    </form>
+                    <br />
+                    <div class="alert alert-success" id="success-alert">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        Email Successfully Sent
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
+        </div>
+        <!-- /container -->
+    </section>
 
-    <footer class="container-fluid text-center">
-        <p>We are experts in all aspects of real estate, from residential to commercial and the development of custom projects.
-            Leverage our success in this industry and our well established network to work for you in realizing your investment
-            ambitions! </p>
+
+
+    <!--Footer-->
+    <footer id="footer" class="footer" style="background-color:black;">
+        <div class="container">
+        </div>
     </footer>
 
+
+    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/isotope.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="./scripts/slick/slick.min.js"></script>
 </body>
 
 </html>

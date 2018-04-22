@@ -1,5 +1,4 @@
 .navbar {
-    margin-bottom: -50px;
     border-radius: 0;
     font-size: 1em;
     background: black;
@@ -21,14 +20,14 @@ header {
 .award-container img {
     margin-left: 3%;
     width: 150px;
-    height: 60px;
+    height: 80px;
 }
 
 #num-1-remax {
     float: right;
     margin: 0;
-    width: 75px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
 
 #our-awards {
@@ -43,18 +42,27 @@ header {
     height: 15%;
     position: relative;
     left: 42.5%;
+    z-index:2000;
 }
 
 .fa {
-    font-size: 13px;
+    font-size: 1em;
     text-align: center;
     text-decoration: none;
     float: right;
     background: white;
     color: black;
-    padding: 5px;
-    margin: 50px 3px 0 3px;
+    padding: 1%;
+    margin: 8px 6px 0 0px;
     border-radius: 3px;
+}
+.share-buttons {
+    z-index: 2000;
+    position: relative;
+}
+.share-buttons .fa {
+    padding: 0.5%;
+    font-size: 2em;
 }
 
 .fa:hover {
