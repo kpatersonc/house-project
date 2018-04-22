@@ -457,13 +457,16 @@ textarea::-ms-input-placeholder
 
 /*For Menu Bar*/
 .navbar-default {
-    background-color:transparent;
+    background-color:black;
     border-color: transparent;
 }
 .navbar {
     min-height: 50px;
-    margin-bottom: 20px;
-    padding: 15px 0;
+    padding-bottom: 4vh;
+    margin-top: 110px;
+}
+.navbar-brand {
+    padding: 0;
 }
 .navbar-default .navbar-nav>li>a {
     color: #f0df98ff;
@@ -482,7 +485,7 @@ textarea::-ms-input-placeholder
     background-color: transparent;
 }
 .menu-bg{
-    background:#00a5ff ;
+    background:black ;
 }
 
 
@@ -806,7 +809,7 @@ textarea::-ms-input-placeholder
 
 /* Home view */
 .image-container {
-    height: 98vh;
+    height: 80vh;
     position: relative;
     text-align:center;
 }

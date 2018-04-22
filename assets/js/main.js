@@ -2,18 +2,18 @@
 
 
 jQuery(document).ready(function ($) {
-	
-	
+
+
 	/*---------------------------------------------*
      * Preloader
      ---------------------------------------------*/
-	 
-	$(window).load(function () {
-		$(".loaded").fadeOut();
-		$(".preloader").delay(1000).fadeOut("slow");
-	});
-	
-	
+
+    $(window).load(function () {
+        $(".loaded").fadeOut();
+        $(".preloader").delay(1000).fadeOut("slow");
+    });
+
+
     /*---------------------------------------------*
      * Mobile menu
      ---------------------------------------------*/
@@ -60,8 +60,8 @@ jQuery(document).ready(function ($) {
         $('.filters-button-group').on('click', 'button', function () {
             var filterValue = $(this).attr('data-filter');
             // use filterFn if matches value
-            filterValue = filterFns[ filterValue ] || filterValue;
-            $grid.isotope({filter: filterValue});
+            filterValue = filterFns[filterValue] || filterValue;
+            $grid.isotope({ filter: filterValue });
         });
         // change is-checked class on buttons
         $('.button-group').each(function (i, buttonGroup) {
@@ -86,7 +86,7 @@ jQuery(document).ready(function ($) {
     });
 
     $('.scrollup').click(function () {
-        $("html, body").animate({scrollTop: 0}, 1000);
+        $("html, body").animate({ scrollTop: 0 }, 1000);
         return false;
     });
 
@@ -121,7 +121,7 @@ jQuery(document).ready(function ($) {
      ---------------------------------------------*/
 
     $.localScroll();
-    
+
     /*---------------------------------------------*
      * Gallery Pop Up Animation
      ---------------------------------------------*/
@@ -139,10 +139,10 @@ jQuery(document).ready(function ($) {
      * Counter 
      ---------------------------------------------*/
 
-//    $('.statistic-counter').counterUp({
-//        delay: 10,
-//        time: 2000
-//    });
+    //    $('.statistic-counter').counterUp({
+    //        delay: 10,
+    //        time: 2000
+    //    });
 
 
 
@@ -151,10 +151,10 @@ jQuery(document).ready(function ($) {
      * WOW
      ---------------------------------------------*/
 
-//        var wow = new WOW({
-//            mobile: false // trigger animations on mobile devices (default is true)
-//        });
-//        wow.init();
+    //        var wow = new WOW({
+    //            mobile: false // trigger animations on mobile devices (default is true)
+    //        });
+    //        wow.init();
 
 
     /* ---------------------------------------------------------------------
@@ -190,8 +190,8 @@ jQuery(document).ready(function ($) {
     $("#success-alert").hide();
     //End
 
-        //Set carousel for mobiles on load
-    if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+    //Set carousel for mobiles on load
+    if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('.testimonals-images').owlCarousel({
             responsiveClass: true,
             autoplay: false,
@@ -219,6 +219,54 @@ jQuery(document).ready(function ($) {
 
         });
     }
+
+    // Featured Listings Carousel
+    $('.listing-items').slick({
+        infinite: true,
+        dots: true,
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        centerMode: true,
+        centerPadding: '10px',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    $(window).on("scroll", function () {
+        if (window.scrollY > 0) {
+            $('.navbar').css("margin-top", 0);
+            $('.navbar').css("padding", 15);
+        }
+        else {
+            $('.navbar').css("margin-top", 120);
+            $('.navbar').css("padding", 0);
+        }
+    });
 });
 
 var contactForm = $("form#contact-form");
@@ -236,7 +284,7 @@ contactForm.submit(function (event) {
     contactForm.find("button").text("Sending...");
     emailjs.send(service_id, template_id, templateParams)
         .then(function () {
-            $("#success-alert").fadeTo(2000, 500).slideUp(500, function(){
+            $("#success-alert").fadeTo(2000, 500).slideUp(500, function () {
                 $("#success-alert").slideUp(500);
             });
             contactForm.find('input[id="from_name"]').val('');

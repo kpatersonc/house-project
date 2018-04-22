@@ -1,5 +1,4 @@
 .navbar {
-    margin-bottom: -50px;
     border-radius: 0;
     font-size: 1em;
     background: black;
@@ -43,6 +42,7 @@ header {
     height: 15%;
     position: relative;
     left: 42.5%;
+    z-index:2000;
 }
 
 .fa {

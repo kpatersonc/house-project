@@ -12,6 +12,16 @@ h1 {
     color: #f0df98ff!important;
 }
 
+.logo {
+    background-color: black;
+}
+
+#logo-small {
+    display: none;
+    max-height: 10vh;
+
+}
+
 h1 span{
     background-image:url(../images/elegant_border.jpg);
     background-size: contain;
@@ -66,6 +76,74 @@ h1 span{
     border-color: #f0df98ff;
 }
 
+/* Featured Listings */
+#feature-listings {
+    width: 100%;
+    background-image: url("../images/bg-testimonials.jpg");
+  }
+  #feature-listings .text-color {
+      color: #f0df98;
+  }
+  #feature-listings .text-center {
+      margin-top:20px;
+  }
+  
+  #feature-listings .text-center h2 {
+      padding: 30px;
+  }
+  #feature-listings .listing-items{
+    width:80%;
+    margin-left:10%;
+  }
+  #feature-listings .content .list-info{
+    display:inline-block;
+    width:100%;
+    padding:0 10px;
+  }
+  #feature-listings .content .list-info img{
+    width:100%; 
+  }
+  #feature-listings .content .city{
+      text-align: center;  
+      padding: 30px;
+      
+  }
+  #feature-listings .content .list-info img{
+    height:25vh;
+  }
+  #feature-listings .content .list-info .list-block{
+    text-align:center;
+  }
+  .slick-next, .slick-prev{
+      right: -8%;
+      height: 50px;
+      width: 50px;
+      background: #f0df98;
+      border-radius: 100%;
+      background-position: center;
+      top: 35%;
+      z-index:5;
+      
+  }
+  .slick-prev{
+     left: -8%;
+  }
+  
+  .slick-next:before{
+      content: "\e080";
+      font-family: 'Glyphicons Halflings';
+   }
+   
+   .slick-prev:before{
+      content: "\e079";
+      font-family: 'Glyphicons Halflings';
+   }
+   .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+      color: transparent;
+      outline: none;
+      background: #f0df98;
+    }
+
 @media screen and (min-height: 720px) and (min-width:720px){
     .page{
         height: 100vh;
@@ -91,7 +169,6 @@ h1 span{
     background-color: black;
     height: 20vh;
 }
-
 #buying{
     background-image: url("../images/bg-buying.jpg");
 }
