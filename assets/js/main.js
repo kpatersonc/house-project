@@ -307,5 +307,14 @@ contactForm.submit(function (event) {
     return false;
 });
 
+//Close mobile nav bar on selection
+function navClick(link){
+    window.location.href=link;
+    var mobileNavElement = document.getElementById("bs-example-navbar-collapse-1");
+    mobileNavElement.className="navbar-collapse collapse";
+    mobileNavElement.setAttribute("aria-expanded", false);
+    
+}
+
 
 

@@ -75,19 +75,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
                     <li>
-                        <a onclick="window.location.href='index.html#home'">Home</a>
+                        <a onclick="navClick('index.html#home')">Home</a>
                     </li>
                     <li>
-                        <a onclick="window.location.href='index.html#featured-listings'">Featured Listings</a>
+                        <a onclick="navClick('index.html#featured-listings')">Featured Listings</a>
                     </li>
                     <li>
-                        <a onclick="window.location.href='index.html#information'">Information</a>
+                        <a onclick="navClick('index.html#information')">Information</a>
                     </li>
 
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a onclick="window.location.href='index.html#testimonials'">Testimonials</a>
+                        <a onclick="navClick('index.html#testimonials')">Testimonials</a>
                     </li>
                     <li>
                         <a title="Coming Soon">Investor Portal</a>
@@ -101,7 +101,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <a name="home"></a>
+    <a name="home" class="anchor"></a>
     <!--Home page style-->
     <header id="home" class="home">
         <div class="overlay">
@@ -139,8 +139,8 @@
             </div>
         </div>
     </header>
+    <a id="featured-listings" name="featured-listings" class="anchor"></a>
     <div class="section-divider"></div>
-    <a id="featured-listings" name="featured-listings"></a>
     <section id="feature-listings" class="portfolio lightbg sections page text-center">
         <div class="container">
             <div class="featured-listings">
@@ -262,16 +262,14 @@
             </div>
         </div>
     </section>
+    <a class="anchor" name="information"></a>
     <div class="section-divider"></div>
-    <a id="information" name="information"></a>
     <section id="buying" class="portfolio lightbg sections page">
         <div class="container">
             <div class="heading text-center">
-                <div>
-                    <h1 class="info-title">
-                        <span>Buying</span>
-                    </h1>
-                </div>
+                <h1 class="info-title">
+                    <span>Buying</span>
+                </h1>
             </div>
             <div class="container-fluid text-center">
                 <div class="row content">
@@ -411,7 +409,7 @@
         </div>
     </section>
     <!-- End of why-us-one Section -->
-    <a name="testimonials"></a>
+    <a name="testimonials" class="anchor"></a>
     <div class="section-divider"></div>
     <section id="testimonial" class="portfolio lightbg sections page">
         <div class="container">
