@@ -35,6 +35,25 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 
 
 }
+
+@media (max-width: 850px) and (max-height: 500px) {
+    .award-card {
+        display: none;
+    }
+    .profile-card img {
+        max-height: 33vh;
+    }
+    .profile-card p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .profile-card {
+        width: 30vw;
+    }
+    .home-text {
+        font-size: 12px;
+    }
+}
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     html {
@@ -111,9 +130,18 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         display: none;
     }
     .profile-card img {
-        max-width: 30vw;
+        max-height: 33vh;
     }
-
+    .profile-card p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .profile-card {
+        width: 30vw;
+    }
+    .home-text {
+        font-size: 12px;
+    }
 }
 
 
