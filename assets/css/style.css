@@ -462,8 +462,9 @@ textarea::-ms-input-placeholder
 }
 .navbar {
     min-height: 50px;
-    /* padding-bottom: 4vh; */
-    margin-top: 110px;
+    border-radius: 0;
+    font-size: 1.2em;
+    background: black;
 }
 .nav-share-buttons {
     top: 0;
@@ -471,6 +472,9 @@ textarea::-ms-input-placeholder
 }
 .navbar-brand {
     padding: 0;
+}
+.nav>li>a {
+    padding: 10px 8px;
 }
 .navbar-default .navbar-nav>li>a {
     color: #f0df98ff;
@@ -813,9 +817,9 @@ textarea::-ms-input-placeholder
 
 /* Home view */
 .image-container {
-    height: 80vh;
+    height: 95vh;
     position: relative;
-    text-align:center;
+    text-align: center;
 }
 .profile-card {      
     position: absolute;

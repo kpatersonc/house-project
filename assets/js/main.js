@@ -257,29 +257,17 @@ jQuery(document).ready(function ($) {
             }
         ]
     });
-    $(window).on("scroll", function () {
-        if (window.scrollY > 0) {
-            $('.navbar').css("margin-top", 0);
-            $('.navbar').css("padding", 15);
-            $('#logo').css("position", "fixed");
-            $('#logo').css("width","7%");
-            $('#logo').css("height","7%");
-            $('#logo').css("left","45.5%");
-            $('.share-buttons').css("position", "fixed");
-            $('.share-buttons').css("top", 0);
-            $('.share-buttons').css("right", 0);
-        }
-        else {
-            $('.navbar').css("margin-top", 120);
-            $('.navbar').css("padding", 0);
-            $('#logo').css("position", "relative");
-            $('#logo').css("width","15%");
-            $('#logo').css("height","15%");
-            $('#logo').css("left","42.5%");
-            $('.share-buttons').css("position", "relative");
-        }
-    });
+    updateNavbarMargin();
+    $(window).resize(function() {
+        updateNavbarMargin();
+      });
 });
+
+function updateNavbarMargin() {
+    var logoHeight = $('#bs-example-navbar-collapse-1').height(); // 50px is the min height for the navbar + 15px padding
+    var negativeHeight = -Math.abs(logoHeight)
+    $('.logo').css("margin-bottom", negativeHeight);
+}
 
 var contactForm = $("form#contact-form");
 contactForm.submit(function (event) {
