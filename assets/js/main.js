@@ -33,6 +33,17 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    // Home backgroundImage 
+	
+	  $("#home .bgimg").hide();
+	  rotateBackgroundImages();	
+	  //changeImage();  
+		function rotateBackgroundImages() {
+		  $("#home .bgimg").first().insertBefore("#home .overlay").fadeOut(5000);
+		  $("#home .bgimg").first().fadeIn(5000);
+		  setTimeout(rotateBackgroundImages, 7000);
+		}  
+
     /*---------------------------------------------*
      * Isotop for portfolio
      ---------------------------------------------*/
