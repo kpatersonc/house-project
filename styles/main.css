@@ -219,6 +219,10 @@ h1 span.shrink {
     background-image: url("../images/bg-testimonials.jpg");
 }
 
+#school-locator {
+    background-image: url("../images/bg-school.jpg");
+}
+
 #investor-portal {
     position: absolute;
     top: 50%;
@@ -281,3 +285,44 @@ h1 span.shrink {
     top: -65px;
     visibility: hidden;
 }
+
+.school-icon{
+    height: 50px;
+    width: 50px;
+}
+
+.school-link{
+    margin: 20px 0;
+}
+
+@media screen and (max-height: 830px) and (max-width: 740px){
+    .school-link{
+        margin: 0;
+    }
+}
+
+.school-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 60%;
+    margin: auto;
+}
+
+.school-text span{
+    float: left;
+    color: #f0df98;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.school-container{
+    width: 250px; 
+    margin: 0 auto; 
+    display: inline-block;
+    position: relative;
+}
+

@@ -37,7 +37,7 @@ header {
     font-size: 16px;
 }
 
-#logo {
+#logo, #school-page-logo{
     width: 15%;
     height: 15%;
     position: relative;
@@ -90,6 +90,12 @@ header {
 
     #logo {
         width: 50%;
+        left: 0;
+    }
+    #school-page-logo{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
         left: 0;
     }
 }
