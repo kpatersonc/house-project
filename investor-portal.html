@@ -19,6 +19,9 @@
     <style>
         body {
             color: #f0df98ff;
+
+        }
+        .background {
             background: url("./images/bg-testimonials.jpg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -48,10 +51,10 @@
 
 <body>
     <div class="nav-container">
-        <nav class="navbar navbar-default" id="main_navbar">
+        <nav class="navbar navbar-default" id="main_navbar" style="margin-bottom: 0;">
             <div class="container">
                 <div class="logo">
-                    <div class="share-buttons">
+                    <div class="share-buttons" style="position: absolute;">
                         <a href="#" class="fa fa-instagram"></a>
                         <a href="#" class="fa fa-youtube"></a>
                         <a href="#" class="fa fa-linkedin"></a>
@@ -114,6 +117,7 @@
             <!-- /.container-fluid -->
         </nav>
     </div>
+    <div class="background">
     <div id="contact" class="investor-portal-container">
         <div class="container ">
             <div class="row contact-row">
@@ -173,6 +177,7 @@
     </div>
     <!-- /container -->
     </div>
+</div>
 
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/email.js"></script>
