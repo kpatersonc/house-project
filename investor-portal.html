@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./styles/header.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/main.css" />    
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,6 +21,7 @@
             color: #f0df98ff;
 
         }
+
         .background {
             background: url("./images/bg-testimonials.jpg");
             background-size: cover;
@@ -30,6 +31,7 @@
 
         .investor-portal-container {
             background: rgba(5, 5, 5, 0.336);
+            padding: 3%;
         }
 
         @media screen and (max-width: 1000px) {
@@ -118,66 +120,66 @@
         </nav>
     </div>
     <div class="background">
-    <div id="contact" class="investor-portal-container">
-        <div class="container ">
-            <div class="row contact-row">
-                <div class="contact-form">
-                    <div class="text-center">
-                        <h1 class="text-center">Investor Portal</h1>
-                        <p>
-                            The investor portal is coming soon. In the meantime, please contact us directly by phone, email, or the form below.
-                        </p>
-                    </div>                    
-                    <form id="contact-form" method="POST">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="form-group">
-                                    <label for="from_name">Name *</label>
-                                    <input required type="text" class="form-control" id="from_name" placeholder="">
+        <div id="contact" class="investor-portal-container">
+            <div class="container ">
+                <div class="row contact-row">
+                    <div class="contact-form">
+                        <div class="text-center">
+                            <h1 class="text-center">Investor Portal</h1>
+                            <p>
+                                The investor portal is coming soon. In the meantime, please contact us directly by phone, email, or the form below.
+                            </p>
+                        </div>
+                        <form id="contact-form" method="POST">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="from_name">Name *</label>
+                                        <input required type="text" class="form-control" id="from_name" placeholder="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="form-group">
-                                    <label for="user_email">Email *</label>
-                                    <input required type="text" class="form-control" id="user_email" placeholder="">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="user_email">Email *</label>
+                                        <input required type="text" class="form-control" id="user_email" placeholder="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="form-group">
-                                    <label for="user_phone">Phone Number *</label>
-                                    <input required type="text" class="form-control" id="user_phone" placeholder="">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="user_phone">Phone Number *</label>
+                                        <input required type="text" class="form-control" id="user_phone" placeholder="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="form-group">
-                                    <label for="user_comment">Your Message</label>
-                                    <textarea rows="7" class="form-control" id="user_comment" placeholder=""></textarea>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="user_comment">Your Message</label>
+                                        <textarea rows="7" class="form-control" id="user_comment" placeholder=""></textarea>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="contact-btn">
+                                <button type="submit" class="btn btn-primary send-button">Send Email</button>
+                            </div>
+                        </form>
+                        <br />
+                        <div class="alert alert-success" id="success-alert">
+                            <button type="button" class="close" data-dismiss="alert">x</button>
+                            Email Successfully Sent
                         </div>
-                        <div class="contact-btn">
-                            <button type="submit" class="btn btn-primary send-button">Send Email</button>
-                        </div>
-                    </form>
-                    <br />
-                    <div class="alert alert-success" id="success-alert">
-                        <button type="button" class="close" data-dismiss="alert">x</button>
-                        Email Successfully Sent
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
+        <!-- /container -->
     </div>
-    <!-- /container -->
     </div>
-</div>
 
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/email.js"></script>
