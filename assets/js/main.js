@@ -203,12 +203,15 @@ jQuery(document).ready(function ($) {
 
     //Set carousel for mobiles on load
     if ((/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+        $(".carousel-img").removeClass("col-sm-3");
+        $(".carousel-img").removeClass("col-sm-2");
         $('.mobile-carousel-images').owlCarousel({
             responsiveClass: true,
             autoplay: false,
             items: 1,
             loop: true,
             dots: true,
+            center: true,
             autoplayHoverPause: true,
             responsive: {
                 // breakpoint from 0 up
