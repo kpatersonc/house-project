@@ -271,17 +271,8 @@ jQuery(document).ready(function ($) {
             }
         ]
     });
-    updateNavbarMargin();
-    $(window).resize(function() {
-        updateNavbarMargin();
-      });
 });
 
-function updateNavbarMargin() {
-    var logoHeight = $('#bs-example-navbar-collapse-1').height(); // 50px is the min height for the navbar + 15px padding
-    var negativeHeight = -Math.abs(logoHeight)
-    $('.logo').css("margin-bottom", negativeHeight);
-}
 
 var contactForm = $("form#contact-form");
 contactForm.submit(function (event) {
