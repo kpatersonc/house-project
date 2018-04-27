@@ -184,6 +184,9 @@ h1 span.shrink {
         position: relative;
         height: 80vh;
     }
+    .background{
+        height: 100vh;
+    }
 }
 
 .section-divider {
