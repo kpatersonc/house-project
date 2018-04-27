@@ -1,14 +1,18 @@
-
 @media (min-width: 1000px) and (max-height: 750px) {
     .profile-card img {
         max-width: 80%;
     }
     .home-text {
         font-size: 20px;
-        bottom: 65%;
+        bottom: 60%;
+    }
+    .award-logo {
+        height: 100px;
     }
 }
+
 /* Portrait tablets and medium desktops */
+
 @media (min-width: 992px) and (max-width: 1220px) {
     body {
         font-size: 15px;
@@ -40,12 +44,12 @@
         margin-top: 0.5vh;
     }
     .home-text {
-        bottom: 55%;
+        bottom: 67%;
     }
     .navbar-header {
         float: none;
     }
-    .navbar-left,.navbar-right {
+    .navbar-left, .navbar-right {
         float: none !important;
     }
     .navbar-toggle {
@@ -73,20 +77,24 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .collapse.in{
-        display:block !important;
+    .collapse.in {
+        display: block !important;
         margin-top: 5vh;
     }
     #logo-small {
         max-height: 100%;
     }
-    .anchor{
+    .anchor {
         top: -50px;
+    }
+    .award-logo {
+        height: 100px;
     }
 }
 
 /* Portrait tablets and small desktops */
-@media  (max-width: 991px) {
+
+@media (max-width: 991px) {
     html {
         font-size: 90%;
     }
@@ -99,7 +107,6 @@
     .item .details p {
         font-size: 16px;
     }
-
     .item .details small {
         font-size: 16px;
     }
@@ -128,7 +135,7 @@
     .navbar-header {
         float: none;
     }
-    .navbar-left,.navbar-right {
+    .navbar-left, .navbar-right {
         float: none !important;
     }
     .navbar-toggle {
@@ -156,14 +163,14 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .collapse.in{
-        display:block !important;
+    .collapse.in {
+        display: block !important;
         margin-top: 1vh;
     }
     #logo-small {
         max-height: 100%;
     }
-    .anchor{
+    .anchor {
         top: -50px !important;
     }
 }
@@ -195,34 +202,35 @@
     .image-container {
         height: 95vh;
     }
-    .collapse.in{
+    .collapse.in {
         margin-top: 0;
     }
-
 }
+
 /* Landscape phones and portrait tablets */
+
 @media (max-width: 767px) {
     html {
         font-size: 80%;
     }
     .navbar-toggle {
         background-color: #ffffff;
-        border:none;
+        border: none;
     }
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
         background-color: #333333;
-        border:none;
+        border: none;
     }
     .navbar-default .navbar-toggle:hover .icon-bar {
         background-color: #fff;
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-        border-color:none;
+        border-color: none;
         background: black;
     }
-    .brand-identity{
+    .brand-identity {
         text-align: center;
-        margin-bottom:50px;
+        margin-bottom: 50px;
     }
     .home-content h1 {
         font-size: 35px;
@@ -236,13 +244,12 @@
     .contact-left-info {
         text-align: center;
     }
-    .contact-btn{
+    .contact-btn {
         text-align: center;
     }
     .heading h1 {
         font-size: 20px;
     }
-
     .item .details p {
         font-size: 20px;
     }
@@ -254,7 +261,6 @@
         width: 90px;
         height: 90px;
     }
-
     .scrollup {
         width: 50px;
         height: 50px;
@@ -292,13 +298,14 @@
         padding: 4%;
         font-size: 0.8em;
     }
-    .collapse.in{
+    .collapse.in {
         margin-top: 0;
     }
 }
 
 /* iPhone 5SE Landscape */
-@media (min-width: 481px) and (max-width: 750px){
+
+@media (min-width: 481px) and (max-width: 750px) {
     .navbar {
         padding-bottom: 0!important;
     }
@@ -308,16 +315,15 @@
     }
 }
 
-
-
 /* Landscape phones and smaller */
+
 @media (max-width: 480px) {
     html {
         font-size: 65%;
     }
-    .brand-identity{
+    .brand-identity {
         text-align: center;
-        margin-bottom:50px;
+        margin-bottom: 50px;
     }
     .home-content h1 {
         font-size: 22px;
@@ -343,7 +349,7 @@
     .contact-form {
         padding: 0;
     }
-    .copyright{
+    .copyright {
         margin-bottom: 25px;
     }
     .item .details p {
@@ -358,29 +364,26 @@
         height: 70px;
     }
     #quote-carousel .carousel-control.left {
-        left:0px;
+        left: 0px;
     }
     #quote-carousel .carousel-control.right {
-        right:0px;
+        right: 0px;
     }
     #quote-carousel .carousel-control {
-        top:30px;
+        top: 30px;
     }
-    .item .details p{
+    .item .details p {
         font-size: 15px;
     }
-
-    .item .details small{
+    .item .details small {
         font-size: 15px;
     }
-
     .scrollup {
         width: 50px;
         height: 50px;
         line-height: 50px;
         bottom: 110px;
     }
-
     .owl-carousel .owl-item img {
         /* width:30%; */
         margin: 0 auto;
@@ -395,8 +398,8 @@
     .award-card {
         display: none;
     }
-    .profile-card{
-        width:50%;
+    .profile-card {
+        width: 50%;
     }
     .profile-card img {
         max-width: -webkit-fill-available;
@@ -404,7 +407,7 @@
     .home-text {
         font-size: 16px;
     }
-    .navbar {        
+    .navbar {
         padding: 0!important;
     }
     h1 span.shrink {
@@ -417,17 +420,15 @@
 }
 
 @media (max-width: 320px) {
-
-
     html {
         font-size: 60.5%;
     }
     .portfolio-item h2 {
         font-size: 13px;
     }
-    .brand-identity{
+    .brand-identity {
         text-align: center;
-        margin-bottom:50px;
+        margin-bottom: 50px;
     }
     .home-content h1 {
         font-size: 25px;
@@ -441,7 +442,7 @@
     .contact-form {
         padding: 0;
     }
-    .copyright{
+    .copyright {
         margin-bottom: 25px;
     }
     #quote-carousel .carousel-indicators li {
@@ -465,6 +466,4 @@
     .para-logo {
         width: 20%;
     }
-
 }
-
