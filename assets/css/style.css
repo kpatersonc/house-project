@@ -889,7 +889,7 @@ textarea::-ms-input-placeholder
     line-height: 65px;
     color: #ffffff;
     font-size: 30px;
-    background: #00a5ff;
+    background: #f0df98ff;
     position: absolute;
     bottom:65px;
     left: 50%;
@@ -914,9 +914,12 @@ textarea::-ms-input-placeholder
 
 /* Footer Area */
 .footer{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     position: relative;
+    color: #f0df98ff;
+    font-weight: bold;
+    font-size: 16px;
 }
 .copyright{
     font-family: 'open_sansregular';
