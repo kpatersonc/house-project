@@ -6,19 +6,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./images/favicon.ico">
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./styles/header.css">
-    <link rel="stylesheet" type="text/css" href="./styles/main.css">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         body {
             color: #f0df98ff;
+        }
+
+        .background {
             background: url("./images/bg-school.jpg");
-            background-size: auto;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -36,8 +40,9 @@
                 background: rgba(5, 5, 5, 0.288);
             }
         }
+
         @media screen and (min-height: 720px) and (min-width:720px) {
-            body{
+            body {
                 height: 100vh;
             }
         }
@@ -45,101 +50,187 @@
 </head>
 
 <body>
-    <div class="logo">
-        <a href="./index.html">
-            <img src="./images/TeamOfAcesLogo.png" class="center" id="school-page-logo">
-        </a>
-    </div>
-
-    <div class="school-locator-container">
-        <div class="container" style="width: auto">
-            <div class="row content">
-                <div class="text-center">
-                    <div class="text-container">
-                        <h1>School Locator</h1>
+    <div class="nav-container">
+        <nav class="navbar navbar-default" id="main_navbar" style="margin-bottom: 0;">
+            <div class="container">
+                <div class="logo">
+                    <div class="share-buttons" style="position: absolute;">
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                    </div>
+                    <a href="index.html">
+                        <img src="./images/TeamOfAcesLogo.png" class="center" id="logo">
+                    </a>
+                </div>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./images/TeamOfAcesLogo.png" alt="logo" id="logo-small" />
+                    </a>
+                    <div class="nav-share-buttons">
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-facebook"></a>
                     </div>
                 </div>
-                <div class="text-center">
-                    <div class="text-container">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12 school-link">
-                                <div class="col-md-4 col-sm-4 col-xs-12 school">
-                                    <a href="https://www.dpcdsb.org/" class="school-container">
-                                        <img class="school-icon" src="./images/dpcdsb-logo.JPG" style="float: left">
-                                        <div class="school-text"><span>Dufferin-Peel</span></div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-12 school">
-                                    <a href="https://www.hdsb.ca/Pages/Home.aspx" class="school-container">
-                                        <img class="school-icon" src="./images/hdsb-logo.JPG" style="float: left">
-                                        <div class="school-text"><span>Halton</span></div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-12 school">
-                                    <a href="https://www.hcdsb.org/Pages/default.aspx" class="school-container">
-                                        <img class="school-icon" src="./images/hcdsb-logo.JPG" style="float: left; background-color: white;">
-                                        <div class="school-text"><span>Halton-Catholic</span></div>
-                                    </a>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a onclick="navClick('index.html#home')">Home</a>
+                        </li>
+                        <li>
+                            <a onclick="navClick('index.html#featured-listings')">Featured Listings</a>
+                        </li>
+                        <li>
+                            <a onclick="navClick('index.html#information')">Information</a>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a onclick="navClick('index.html#testimonials')">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#">Investor Portal</a>
+                        </li>
+                        <li>
+                            <a title="Coming Soon">Member Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+
+    <div class="background">
+        <div class="school-locator-container">
+            <div class="container" style="width: auto">
+                <div class="row content">
+                    <div class="text-center">
+                        <div class="text-container">
+                            <h1>School Locator</h1>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12 school-link">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 school">
+                                        <a href="https://www.dpcdsb.org/" class="school-container">
+                                            <img class="school-icon" src="./images/dpcdsb-logo.JPG" style="float: left">
+                                            <div class="school-text">
+                                                <span>Dufferin-Peel</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 school">
+                                        <a href="https://www.hdsb.ca/Pages/Home.aspx" class="school-container">
+                                            <img class="school-icon" src="./images/hdsb-logo.JPG" style="float: left">
+                                            <div class="school-text">
+                                                <span>Halton</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 school">
+                                        <a href="https://www.hcdsb.org/Pages/default.aspx" class="school-container">
+                                            <img class="school-icon" src="./images/hcdsb-logo.JPG" style="float: left; background-color: white;">
+                                            <div class="school-text">
+                                                <span>Halton-Catholic</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12 school-link">
-                                <div class="col-md-4 col-sm-4 col-xs-12 school">
-                                    <a href="http://www.hwdsb.on.ca" class="school-container">
-                                        <img class="school-icon" src="./images/hwdsb-logo.JPG" style="float: left; background-color: white;">
-                                        <div class="school-text"><span>Hamilton</span></div>
-                                    </a>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12 school-link">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 school">
+                                        <a href="http://www.hwdsb.on.ca" class="school-container">
+                                            <img class="school-icon" src="./images/hwdsb-logo.JPG" style="float: left; background-color: white;">
+                                            <div class="school-text">
+                                                <span>Hamilton</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 school">
+                                        <a href="https://www.hwcdsb.ca" class="school-container">
+                                            <img class="school-icon" src="./images/hwcdsb-logo.JPG" style="float: left">
+                                            <div class="school-text">
+                                                <span>Hamilton-Catholic</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 school">
+                                        <a href="http://www.peelschools.org/Pages/default.aspx" class="school-container">
+                                            <img class="school-icon" src="./images/peel-logo.JPG" style="float: left">
+                                            <div class="school-text">
+                                                <span>Peel</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 col-sm-4 col-xs-12 school">
-                                    <a href="https://www.hwcdsb.ca" class="school-container">
-                                        <img class="school-icon" src="./images/hwcdsb-logo.JPG" style="float: left">
-                                        <div class="school-text"><span>Hamilton-Catholic</span></div>
-                                    </a>
-                                </div>               
-                                <div class="col-md-4 col-sm-4 col-xs-12 school">
-                                    <a href="http://www.peelschools.org/Pages/default.aspx" class="school-container">
-                                        <img class="school-icon" src="./images/peel-logo.JPG" style="float: left">
-                                        <div class="school-text"><span>Peel</span></div>
-                                    </a>
-                                </div>                                          
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12 school-link">
-                                <div class="col-md-4 col-sm-4 col-xs-12 school">
-                                    <a href="https://www.tcdsb.org/Pages/default.aspx" class="school-container">
-                                        <img class="school-icon" src="./images/tcdsb-logo.JPG" style="float: left">
-                                        <div class="school-text"><span>Toronto-Catholic</span></div>
-                                    </a>
-                                </div> 
-                                <div class="col-md-4 col-sm-4 col-xs-12 school">
-                                    <a href="http://www.tdsb.on.ca" class="school-container">
-                                        <img class="school-icon" src="./images/tdsb-logo.JPG" style="float: left">
-                                        <div class="school-text"><span>Toronto</span></div>
-                                    </a>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12 school-link">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 school">
+                                        <a href="https://www.tcdsb.org/Pages/default.aspx" class="school-container">
+                                            <img class="school-icon" src="./images/tcdsb-logo.JPG" style="float: left">
+                                            <div class="school-text">
+                                                <span>Toronto-Catholic</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 school">
+                                        <a href="http://www.tdsb.on.ca" class="school-container">
+                                            <img class="school-icon" src="./images/tdsb-logo.JPG" style="float: left">
+                                            <div class="school-text">
+                                                <span>Toronto</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 school">
+                                        <a href="http://www.yrdsb.ca/Pages/default.aspx" class="school-container">
+                                            <img class="school-icon" src="./images/yrdsb-logo.JPG" style="float: left">
+                                            <div class="school-text">
+                                                <span>York</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 col-sm-4 col-xs-12 school">
-                                    <a href="http://www.yrdsb.ca/Pages/default.aspx" class="school-container">
-                                        <img class="school-icon" src="./images/yrdsb-logo.JPG" style="float: left">
-                                        <div class="school-text"><span>York</span></div>
-                                    </a>
-                                </div>                             
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12 school-link">
-                                <div class="col-md-6 col-sm-6 col-xs-12 school">
-                                    <a href="http://www.ycdsb.ca" class="school-container">
-                                        <img class="school-icon" src="./images/ycdsb-logo.JPG" style="float: left">
-                                        <div class="school-text"><span>York-Catholic</span></div>
-                                    </a>
-                                </div>   
-                                <div class="col-md-6 col-sm-6 col-xs-12 school">
-                                    <a href="http://www.compareschoolrankings.org" class="school-container">
-                                        <img class="school-icon" src="./images/fraser-logo.JPG" style="float: left">
-                                        <div class="school-text"><span>School Rankings</span></div>
-                                    </a>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12 school-link">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 school">
+                                        <a href="http://www.ycdsb.ca" class="school-container">
+                                            <img class="school-icon" src="./images/ycdsb-logo.JPG" style="float: left">
+                                            <div class="school-text">
+                                                <span>York-Catholic</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 school">
+                                        <a href="http://www.compareschoolrankings.org" class="school-container">
+                                            <img class="school-icon" src="./images/fraser-logo.JPG" style="float: left">
+                                            <div class="school-text">
+                                                <span>School Rankings</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -148,6 +239,7 @@
             </div>
         </div>
     </div>
+    <script src="assets/js/navbar.js"></script>
 </body>
 
 </html>
