@@ -76,6 +76,9 @@
     #logo-small {
         max-height: 100%;
     }
+    .anchor{
+        top: -50px;
+    }
 }
 
 /* Portrait tablets and small desktops */
@@ -155,6 +158,9 @@
     }
     #logo-small {
         max-height: 100%;
+    }
+    .anchor{
+        top: -50px !important;
     }
 }
 

@@ -199,12 +199,6 @@ h1 span.shrink {
     height: 100px;
 }
 
-@media screen and (max-height: 760px), screen and (max-width: 420px) {
-    .section-divider {
-        height: 50px;
-    }
-}
-
 #information {
     background-color: black;
     height: 20vh;
@@ -298,7 +292,7 @@ h1 span.shrink {
 .anchor{
     display: block;
     position: relative;
-    top: -65px;
+    top: -135px;
     visibility: hidden;
 }
 
@@ -314,6 +308,12 @@ h1 span.shrink {
 @media screen and (max-height: 830px) and (max-width: 740px){
     .school-link{
         margin: 0;
+    }
+}
+
+@media screen and (max-height: 760px), screen and (max-width: 420px) {
+    .section-divider {
+        height: 50px;
     }
 }
 
@@ -341,4 +341,3 @@ h1 span.shrink {
     display: inline-block;
     position: relative;
 }
-
