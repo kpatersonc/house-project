@@ -176,6 +176,14 @@ h1 span.shrink {
     .award-logo{
         height: 100px;
     }
+    #why-us-awards{
+        bottom: 0;
+        position: absolute;
+    }
+    #why-us-container{
+        position: relative;
+        height: 80vh;
+    }
 }
 
 .section-divider {
