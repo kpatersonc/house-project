@@ -401,6 +401,9 @@
         padding: 7%;
         font-size: 0.8em;
     }
+    .para-logo {
+        width: 20%;
+    }
 }
 
 @media (max-width: 320px) {
@@ -448,6 +451,9 @@
     h1 span.shrink {
         padding: 7%;
         font-size: 0.8em;
+    }
+    .para-logo {
+        width: 20%;
     }
 
 }

@@ -263,6 +263,11 @@ h1 span.shrink {
     margin-top: 10px
 }
 
+.para-logo {
+    width: 10%;
+    height: 100%;
+}
+
 @media screen and (min-height: 800px) {
     .text-container {
         font-size: 24px;
