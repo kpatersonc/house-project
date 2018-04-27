@@ -75,7 +75,7 @@
         margin-top: 5vh;
     }
     #logo-small {
-        max-height: 8vh;
+        max-height: 100%;
     }
 }
 
@@ -406,9 +406,6 @@
     .navbar {        
         padding: 0!important;
     }
-    .navbar-header {
-        padding-bottom: 4vh!important;
-    }
     h1 span.shrink {
         padding: 7%;
         font-size: 0.8em;
@@ -456,9 +453,6 @@
     }
     .contact-container {
         background: rgba(5, 5, 5, 0.397);
-    }
-    .navbar-header {
-        padding-bottom: 1vh!important;
     }
     h1 span.shrink {
         padding: 7%;
