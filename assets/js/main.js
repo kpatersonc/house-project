@@ -41,7 +41,7 @@ jQuery(document).ready(function ($) {
 		function rotateBackgroundImages() {
 		  $("#home .bgimg").first().insertBefore("#home .overlay").fadeOut(5000);
 		  $("#home .bgimg").first().fadeIn(5000);
-		  setTimeout(rotateBackgroundImages, 7000);
+		  setTimeout(rotateBackgroundImages, 10000);
 		}  
 
     /*---------------------------------------------*
